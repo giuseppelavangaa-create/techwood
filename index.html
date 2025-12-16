@@ -48,6 +48,17 @@
       transition: opacity 0.9s ease, filter 1s ease;
       }
 
+    .auto-mobile,
+    .auto-desktop { display: block; }
+
+    @media (min-width: 769px) {
+      .auto-mobile { display: none !important; }
+    }
+
+    @media (max-width: 768px) {
+      .auto-desktop { display: none !important; }
+    }
+
     /* Scrollbar personalizzate coerenti con la palette */
     body,
     .panel,
@@ -427,6 +438,7 @@
       align-items: center;
       justify-content: center;
       padding: 40px clamp(20px, 4vw, 60px);
+      overflow: hidden;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -438,6 +450,36 @@
     }
     @media (max-width: 900px) {
       .hero { background-attachment: scroll; }
+    }
+
+    .hero-slider {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 0;
+    }
+    .hero-slide {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transition: opacity 0.7s ease;
+    }
+    .hero-slide.is-active { opacity: 1; }
+    .hero-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+    .hero-gradient {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.65));
+      pointer-events: none;
+      z-index: 1;
     }
 
     .hero::before {
@@ -460,6 +502,8 @@
       align-items: center;
       justify-content: center;
       gap: 60px;
+      position: relative;
+      z-index: 2;
     }
 
     /* TITOLO A SINISTRA */
@@ -1141,6 +1185,55 @@
        HERO SECTION
        ========================= -->
   <section class="hero" id="hero">
+    <div class="hero-slider">
+      <figure class="hero-slide is-active">
+        <img src="img/slide/slide1.jpg" alt="Struttura in legno Tech Wood">
+      </figure>
+      <figure class="hero-slide">
+        <img src="img/slide/slide2.jpg" alt="Dettaglio realizzazione Tech Wood">
+      </figure>
+      <figure class="hero-slide">
+        <img src="img/slide/slide3.jpg" alt="Pavimentazione in legno Tech Wood">
+      </figure>
+      <figure class="hero-slide">
+        <img src="img/slide/slide4.jpg" alt="Area relax in legno Tech Wood">
+      </figure>
+      <figure class="hero-slide">
+        <img src="img/slide/slide5.jpg" alt="Copertura in legno Tech Wood">
+      </figure>
+      <figure class="hero-slide">
+        <img src="img/slide/slide6.jpg" alt="Pergola in legno Tech Wood">
+      </figure>
+      <figure class="hero-slide">
+        <img src="img/slide/slide7.jpg" alt="Carporter in legno Tech Wood">
+      </figure>
+      <figure class="hero-slide">
+        <img src="img/slide/slide8.jpg" alt="Area bimbi in legno Tech Wood">
+      </figure>
+      <figure class="hero-slide">
+        <img src="img/slide/slide9.jpg" alt="Rimessa in legno Tech Wood">
+      </figure>
+      <figure class="hero-slide">
+        <img src="img/slide/slide10.jpg" alt="Studio in legno Tech Wood">
+      </figure>
+      <figure class="hero-slide">
+        <img src="img/slide/slide11.jpg" alt="Studio in legno Tech Wood">
+      </figure>
+      <figure class="hero-slide">
+        <img src="img/slide/slide12.jpg" alt="Studio in legno Tech Wood">
+      </figure>
+      <figure class="hero-slide">
+        <img src="img/slide/slide13.jpg" alt="Studio in legno Tech Wood">
+      </figure>
+      <figure class="hero-slide">
+        <img src="img/slide/slide14.jpg" alt="Studio in legno Tech Wood">
+      </figure>
+      <figure class="hero-slide">
+        <img src="img/slide/slide15.jpg" alt="Studio in legno Tech Wood">
+      </figure>
+
+    </div>
+    <div class="hero-gradient"></div>
     <div class="hero-inner">
 
       <!-- LOGO + TESTO A SINISTRA -->
@@ -1228,7 +1321,7 @@
             <h3 class="works-section-title work-trigger" data-work-key="pergole">Pergole</h3>
             <div class="works-grid">
               <div class="works-card work-trigger" data-work-key="pergole">
-                <img src="img/strutture/immlavori1.jpg" alt="Pergola in legno Tech Wood">
+                <img src="img/pergole/pergole1.jpg" alt="Pergola in legno Tech Wood">
                 <span class="works-card-cta">Clicca qui</span>
               </div>
             </div>
@@ -1238,7 +1331,7 @@
             <h3 class="works-section-title work-trigger" data-work-key="carporter">Carporter</h3>
             <div class="works-grid">
               <div class="works-card work-trigger" data-work-key="carporter">
-                <img src="img/strutture/immlavori2.jpg" alt="Carporter in legno Tech Wood">
+                <img src="img/carporter/carporter1.jpg" alt="Carporter in legno Tech Wood">
                 <span class="works-card-cta">Clicca qui</span>
               </div>
             </div>
@@ -1248,7 +1341,7 @@
             <h3 class="works-section-title work-trigger" data-work-key="area-bimbi">Area bimbi</h3>
             <div class="works-grid">
               <div class="works-card work-trigger" data-work-key="area-bimbi">
-                <img src="img/strutture/immlavori3.jpg" alt="Area bimbi in legno Tech Wood">
+                <img src="img/area-bimbi/area-bimbi1.jpg" alt="Area bimbi in legno Tech Wood">
                 <span class="works-card-cta">Clicca qui</span>
               </div>
             </div>
@@ -1258,7 +1351,7 @@
             <h3 class="works-section-title work-trigger" data-work-key="rivestimenti-piscine">Rivestimenti piscine</h3>
             <div class="works-grid">
               <div class="works-card work-trigger" data-work-key="rivestimenti-piscine">
-                <img src="img/strutture/immlavori4.jpg" alt="Rivestimento piscina in legno Tech Wood">
+                <img src="img/piscine/piscine1.jpg" alt="Rivestimento piscina in legno Tech Wood">
                 <span class="works-card-cta">Clicca qui</span>
               </div>
             </div>
@@ -1268,7 +1361,7 @@
             <h3 class="works-section-title work-trigger" data-work-key="rimesse">Rimesse</h3>
             <div class="works-grid">
               <div class="works-card work-trigger" data-work-key="rimesse">
-                <img src="img/strutture/immlavori5.jpg" alt="Rimessa in legno Tech Wood">
+                <img src="img/rimesse/rimesse1.jpg" alt="Rimessa in legno Tech Wood">
                 <span class="works-card-cta">Clicca qui</span>
               </div>
             </div>
@@ -1279,16 +1372,6 @@
             <div class="works-grid">
               <div class="works-card work-trigger" data-work-key="studi">
                 <img src="img/strutture/immlavori6.jpg" alt="Studio in legno Tech Wood">
-                <span class="works-card-cta">Clicca qui</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="works-section">
-            <h3 class="works-section-title work-trigger" data-work-key="altri-lavori">Altri lavori</h3>
-            <div class="works-grid">
-              <div class="works-card work-trigger" data-work-key="altri-lavori">
-                <img src="img/legno/immslide1.jpg" alt="Realizzazione in legno Tech Wood 1">
                 <span class="works-card-cta">Clicca qui</span>
               </div>
             </div>
@@ -1388,12 +1471,12 @@
       </div>
       <div class="panel-content">
         <p>
-          Selezioniamo legno di alta qualità e curiamo ogni fase: progettazione, costruzione e posa.
-          Le nostre lavorazioni nascono per resistere agli agenti atmosferici e valorizzare gli spazi esterni.
+          Selezioniamo legni certificati e li proteggiamo con impregnanti, oli e vernici specifiche per l'esterno.
+          Progettiamo, prefabbrichiamo e montiamo seguendo le norme su carichi e ancoraggi, così le strutture restano stabili,
+          sicure e belle nel tempo anche a contatto con acqua e sole.
         </p>
 
         <ul class="quality-list">
-          <li><strong>Pensiline e tettoie in legno:</strong> coperture pensate per riparare porte, finestre e ingressi dagli agenti atmosferici.</li>
           <li><strong>Pedane da esterno e pavimentazioni su misura:</strong> pedane, passerelle e scalinate per giardini, terrazzi, tettoie e piscine, anche rialzate con basi robuste.</li>
           <li><strong>Travi e perline:</strong> tavole e travi di misure standard o su richiesta, in legno massiccio e lamellare.</li>
           <li><strong>Staccionate in legno per esterno:</strong> grigliati, recinzioni e complementi per delimitare e arredare gli spazi.</li>
@@ -1405,16 +1488,7 @@
         <div class="quality-grid">
           <div class="quality-card">
             <div class="quality-media">
-              <img class="quality-photo" src="img/strutture/immlavori3.jpg" alt="Pensilina e tettoia in legno Tech Wood">
-            </div>
-            <div class="quality-chip">Pensiline</div>
-            <h4>Coperture su misura</h4>
-            <p>Ripari eleganti per ingressi e finestre, studiati per proteggere dai raggi UV e dalla pioggia.</p>
-          </div>
-
-          <div class="quality-card">
-            <div class="quality-media">
-              <img class="quality-photo" src="img/legno/immslide3.jpg" alt="Pedana e pavimentazione in legno Tech Wood">
+              <img class="quality-photo" src="img/qualita/pedana.jpg" alt="Pedana e pavimentazione in legno Tech Wood">
             </div>
             <div class="quality-chip">Pedane</div>
             <h4>Passerelle e pavimenti</h4>
@@ -1465,34 +1539,60 @@
     // Galleria lavori per sottomenù
     const workGallery = {
       pergole: [
-        { src: "img/strutture/immlavori1.jpg", alt: "Pergola in legno Tech Wood" },
-        { src: "img/legno/immslide1.jpg", alt: "Pergola Tech Wood - dettaglio" }
+        { src: "img/pergole/pergole1.jpg", alt: "Pergola in legno Tech Wood" },
+        { src: "img/pergole/pergole2.jpg", alt: "Pergola Tech Wood - dettaglio" },
+        { src: "img/pergole/pergole3.jpg", alt: "Pergola in legno Tech Wood" },
+        { src: "img/pergole/pergole4.jpg", alt: "Pergola Tech Wood - dettaglio" },
+        { src: "img/pergole/pergole5.jpg", alt: "Pergola in legno Tech Wood" }
       ],
       carporter: [
-        { src: "img/strutture/immlavori2.jpg", alt: "Carporter in legno Tech Wood" },
-        { src: "img/strutture/immlavori4.jpg", alt: "Carporter Tech Wood - copertura" }
+        { src: "img/carporter/carporter1.jpg", alt: "Carporter in legno Tech Wood" },
+        { src: "img/carporter/carporter2.jpg", alt: "Carporter Tech Wood - copertura" },
+        { src: "img/carporter/carporter3.jpg", alt: "Carporter in legno Tech Wood" },
+        { src: "img/carporter/carporter4.jpg", alt: "Carporter Tech Wood - copertura" },
+        { src: "img/carporter/carporter5.jpg", alt: "Carporter in legno Tech Wood" },
+        { src: "img/carporter/carporter6.jpg", alt: "Carporter in legno Tech Wood" },
+        { src: "img/carporter/carporter7.jpg", alt: "Carporter in legno Tech Wood" },
+        { src: "img/carporter/carporter8.jpg", alt: "Carporter in legno Tech Wood" },
+        { src: "img/carporter/carporter9.jpg", alt: "Carporter in legno Tech Wood" },
+        { src: "img/carporter/carporter10.jpg", alt: "Carporter Tech Wood - copertura" },
+        { src: "img/carporter/carporter11.jpg", alt: "Carporter in legno Tech Wood" },
       ],
+
+
       "area-bimbi": [
-        { src: "img/strutture/immlavori3.jpg", alt: "Area bimbi in legno Tech Wood" },
-        { src: "img/legno/immslide3.jpg", alt: "Area bimbi Tech Wood - vista laterale" }
+        { src: "img/area-bimbi/area-bimbi1.jpg", alt: "Area bimbi in legno Tech Wood" },
+        { src: "img/area-bimbi/area-bimbi2.jpg", alt: "Area bimbi in legno Tech Wood" }
+
       ],
       "rivestimenti-piscine": [
-        { src: "img/strutture/immlavori4.jpg", alt: "Rivestimento piscina in legno Tech Wood" },
-        { src: "img/legno/immslide5.jpg", alt: "Rivestimento piscina Tech Wood - dettaglio" }
+        { src: "img/piscine/piscine1.jpg", alt: "Rivestimento piscina in legno Tech Wood" },
+        { src: "img/piscine/piscine2.jpg", alt: "Rivestimento piscina in legno Tech Wood" },
+        { src: "img/piscine/piscine3.jpg", alt: "Rivestimento piscina in legno Tech Wood" },
+        { src: "img/piscine/piscine4.jpg", alt: "Rivestimento piscina in legno Tech Wood" },
+        { src: "img/piscine/piscine5.jpg", alt: "Rivestimento piscina in legno Tech Wood" },
+
       ],
       rimesse: [
-        { src: "img/strutture/immlavori5.jpg", alt: "Rimessa in legno Tech Wood" },
-        { src: "img/legno/immslide2.jpg", alt: "Rimessa Tech Wood - struttura" }
+       { src: "img/rimesse/rimesse1.jpg", alt: "Rimessa in legno Tech Wood" },
+       { src: "img/rimesse/rimesse2.jpg", alt: "Rimessa in legno Tech Wood" },
+       { src: "img/rimesse/rimesse3.jpg", alt: "Rimessa in legno Tech Wood" },
+       { src: "img/rimesse/rimesse4.jpg", alt: "Rimessa in legno Tech Wood" },
+       { src: "img/rimesse/rimesse5.jpg", alt: "Rimessa in legno Tech Wood" },
+       { src: "img/rimesse/rimesse6.jpg", alt: "Rimessa in legno Tech Wood" },
+       { src: "img/rimesse/rimesse7.jpg", alt: "Rimessa in legno Tech Wood" },
+       { src: "img/rimesse/rimesse8.jpg", alt: "Rimessa in legno Tech Wood" },
+       { src: "img/rimesse/rimesse9.jpg", alt: "Rimessa in legno Tech Wood" },
+       { src: "img/rimesse/rimesse10.jpg", alt: "Rimessa in legno Tech Wood" },
+       { src: "img/rimesse/rimesse11.jpg", alt: "Rimessa in legno Tech Wood" },
+       { src: "img/rimesse/rimesse12.jpg", alt: "Rimessa in legno Tech Wood" },
+       { src: "img/rimesse/rimesse13.jpg", alt: "Rimessa in legno Tech Wood" },
+       { src: "img/rimesse/rimesse14.jpg", alt: "Rimessa in legno Tech Wood" },
       ],
       studi: [
-        { src: "img/strutture/immlavori6.jpg", alt: "Studio in legno Tech Wood" },
-        { src: "img/legno/immslide1.jpg", alt: "Studio Tech Wood - interno" }
-      ],
-      "altri-lavori": [
-        { src: "img/legno/immslide1.jpg", alt: "Realizzazione in legno Tech Wood 1" },
-        { src: "img/legno/immslide2.jpg", alt: "Realizzazione in legno Tech Wood 2" },
-        { src: "img/legno/immslide3.jpg", alt: "Realizzazione in legno Tech Wood 3" },
-        { src: "img/legno/immslide5.jpg", alt: "Realizzazione in legno Tech Wood 4" }
+        { src: "img/studi/studi1.jpg", alt: "Studio in legno Tech Wood" },
+        { src: "img/studi/studi2.jpg", alt: "Studio in legno Tech Wood" },
+
       ]
     };
 
@@ -1502,8 +1602,7 @@
       "area-bimbi": "Area bimbi",
       "rivestimenti-piscine": "Rivestimenti piscine",
       rimesse: "Rimesse",
-      studi: "Studi",
-      "altri-lavori": "Altri lavori"
+      studi: "Studi"
     };
 
     function openWorkDetail(key) {
@@ -1601,57 +1700,82 @@
     });
 
     // =========================
-    // SLIDESHOW SFONDO CON DISSOLVENZA
+    // SLIDESHOW HERO ADATTIVO (desktop/mobile)
     // =========================
-    document.addEventListener("DOMContentLoaded", function () {
-      const hero = document.getElementById("hero");
+    (function(){
+      const slides = Array.from(document.querySelectorAll(".hero-slide"));
+      if (!slides.length) return;
 
-      // Le tue foto reali
-      const slides = [
-        "img/legno/immslide5.jpg",
-        "img/legno/immslide1.jpg",
-        "img/legno/immslide2.jpg",
-        "img/legno/immslide3.jpg"
-      ];
+      const mq = window.matchMedia("(max-width: 768px)");
+      let current = -1;
+      let timer = null;
 
-      // Precarica le immagini per evitare scatti
-      slides.forEach(src => {
-        const img = new Image();
-        img.src = src;
+      function isVisibleSlide(slide){
+        return mq.matches
+          ? !slide.classList.contains("auto-desktop")
+          : !slide.classList.contains("auto-mobile");
+      }
+
+      function nextVisible(startIndex){
+        let idx = startIndex;
+        for(let i = 0; i < slides.length; i++){
+          idx = (idx + 1) % slides.length;
+          if(isVisibleSlide(slides[idx])) return idx;
+        }
+        return null; // nessuna slide visibile
+      }
+
+      function showSlide(index){
+        slides.forEach((s,i)=>s.classList.toggle("is-active", i === index));
+      }
+
+      function setFirstVisible(){
+        const first = nextVisible(-1);
+        if(first === null) return;
+        current = first;
+        showSlide(current);
+      }
+
+      function startSlider(){
+        if (timer) clearInterval(timer);
+        setFirstVisible();
+        mq.addEventListener("change", setFirstVisible);
+
+        timer = setInterval(function(){
+          const next = nextVisible(current);
+          if(next === null) return;
+          current = next;
+          showSlide(current);
+        }, 6000);
+      }
+
+      window.ebSetFirstVisibleHero = setFirstVisible;
+      window.startHeroSlideshow = startSlider;
+    })();
+
+    // Classifica automaticamente le slide in base all'orientamento (mobile/desktop)
+    window.addEventListener("load", () => {
+      const imgs = document.querySelectorAll(".hero-slide img");
+
+      imgs.forEach(img => {
+        const slide = img.closest(".hero-slide");
+        if (!slide) return;
+
+        const w = img.naturalWidth;
+        const h = img.naturalHeight;
+
+        slide.classList.remove("auto-mobile", "auto-desktop");
+
+        if (h > w) {
+          slide.classList.add("auto-mobile");
+        } else {
+          slide.classList.add("auto-desktop");
+        }
       });
 
-      let current = 0;
-      let slideTimer = null;
-
-      function showSlide(index) {
-        if (!hero) return;
-        hero.style.backgroundImage = "url('" + slides[index] + "')";
+      if (typeof window.ebSetFirstVisibleHero === "function") {
+        window.ebSetFirstVisibleHero();
       }
-
-      function nextSlide() {
-        if (!hero || slides.length === 0) return;
-
-        // Fade out
-        hero.style.opacity = 0;
-
-        // Cambia immagine dopo 400 ms
-        setTimeout(function () {
-          current = (current + 1) % slides.length;
-          showSlide(current);
-
-          // Fade in
-          hero.style.opacity = 1;
-        }, 400);
-      }
-
-      // Mostra subito la prima immagine
-      showSlide(current);
-
-      // Espone l'avvio per sincronizzarlo con la fine del preload
-      window.startHeroSlideshow = function startHeroSlideshow() {
-        if (slideTimer) clearInterval(slideTimer);
-        slideTimer = setInterval(nextSlide, 6000);
-      };
     });
 
     // =========================
@@ -1708,10 +1832,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
