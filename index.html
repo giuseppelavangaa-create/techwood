@@ -1,71 +1,78 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>EscoBarber – Dal Barrio • Barbershop Poggibonsi</title>
+  <title>TECH WOOD – Strutture in legno a Certaldo</title>
 
-  <!-- SEO -->
-  <meta name="description" content="EscoBarber – Barbershop a Poggibonsi: fade, taglio uomo, barba e stile chicano. Prenota su WhatsApp. Via Montegrappa 59, Poggibonsi (SI).">
-  <meta name="keywords" content="escobarber, barbiere poggibonsi, barbershop poggibonsi, taglio uomo, barba, fade, rasatura, dal barrio">
-  <link rel="canonical" href="https://escobarber.it/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="EscoBarber – Dal Barrio • Taglio o Plomo" />
-  <meta property="og:description" content="Fade netti, linee pulite, stile chicano. Prenota ora su WhatsApp." />
-  <meta property="og:image" content="https://escobarber.it/img/immnegozio1.jpg" />
-  <meta property="og:url" content="https://escobarber.it/" />
+  <!-- SEO base -->
+  <meta name="description" content="TECH WOOD a Certaldo: pergole, carport, pedane, rimesse, studi e strutture in legno su misura. Progettazione, produzione e montaggio professionale.">
+  <meta name="keywords" content="tech wood, strutture in legno, pergole legno certaldo, carport legno, pavimentazioni legno, rivestimenti piscina, rimesse legno, studi legno">
+  <meta name="robots" content="index,follow">
+  <meta name="author" content="TECH WOOD">
 
-  <!-- Twitter -->
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.tech-wood.it/">
+
+  <!-- Open Graph (anteprima social) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="TECH WOOD – Strutture in legno su misura a Certaldo">
+  <meta property="og:description" content="Pergole, carport, pavimentazioni e strutture in legno artigianali su misura.">
+  <meta property="og:image" content="https://www.tech-wood.it/img/slide/slide1.jpg">
+  <meta property="og:url" content="https://www.tech-wood.it/">
+
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="EscoBarber – Dal Barrio • Barbershop a Poggibonsi">
-  <meta name="twitter:description" content="Tagli, fade e barba con stile barrio. Prenota su WhatsApp.">
-  <meta name="twitter:image" content="https://escobarber.it/img/immnegozio1.jpg">
+  <meta name="twitter:title" content="TECH WOOD – Strutture in legno su misura a Certaldo">
+  <meta name="twitter:description" content="Pergole, carport, pavimentazioni e soluzioni in legno artigianali su misura.">
+  <meta name="twitter:image" content="https://www.tech-wood.it/img/slide/slide1.jpg">
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="/favicon.png">
-  <link rel="apple-touch-icon" href="/favicon.png">
-  <link rel="shortcut icon" href="/favicon.png">
-
-
-  <!-- Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
 
   <style>
-    :root{
-      --bg:#000000;
-      --bg-soft:#0b0b0b;
-      --surface:#101010;
-      --surface-soft:#151515;
-      --primary:#0f0202;
-      --primary-soft:rgba(225,29,72,0.14);
-      --text:#f9fafb;
-      --muted:#9ca3af;
-      --border:#1f2933;
-      --radius-xl:clamp(1.35rem,1.9vw,1.7rem);
-      --radius-lg:clamp(1rem,1.5vw,1.25rem);
-      --shadow-soft:0 1.1rem 2.8rem rgba(0,0,0,0.75);
-      --header-height:clamp(4rem,4.6vw,4.75rem);
-      --container-max:min(72rem,94vw);
+    :root {
+      --primary: #f0a237;
+      --overlay-bg: rgba(0, 0, 0, 0.6);
+      --panel-bg: rgba(255, 255, 255, 0.96);
+      --transition-fast: 0.25s ease;
+      --tw-green: #1f3a32; /* sfondo preload */
+      --tw-deep: #0b1613;
+      --tw-grid: rgba(255, 255, 255, 0.05);
+      --tw-gold: #f0a237;
+      --tw-green-sheen: #2d6e5a;
+      --site-scale: 1.05;
     }
 
-    *{box-sizing:border-box;margin:0;padding:0}
-    html{
-      font-size:clamp(0.9375rem,0.55vw + 0.75rem,1.125rem);
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-    body{
-      font-family:"Space Grotesk",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-      background:radial-gradient(circle at top,#181818 0,#050505 45%,#000 100%);
-      color:var(--text);
-      scroll-behavior:smooth;
-      min-height:100vh;
-      line-height:1.6;
+
+    body {
+      font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #000;
+      color: #fff;
+      overflow-x: hidden;
     }
-    img{max-width:100%;display:block}
-    a{text-decoration:none;color:inherit}
+    body.loading {
+        overflow: hidden;
+        height: 100vh;
+      }
+
+    body.loading section.hero {
+      opacity: 0;              /* Nasconde la home */
+      pointer-events: none;    /* Disattiva i click */
+      filter: blur(8px);
+      transition: opacity 0.9s ease, filter 1s ease;
+      }
 
     .auto-mobile,
     .auto-desktop { display: block; }
@@ -77,1578 +84,1652 @@
     @media (max-width: 768px) {
       .auto-desktop { display: none !important; }
     }
-    
 
-    .container{
-      width:var(--container-max);
-      margin:0 auto;
-      padding:0 clamp(1.25rem,3vw,2rem);
+    /* Scrollbar personalizzate coerenti con la palette */
+    body,
+    .panel,
+    .overlay,
+    .works-grid,
+    .quality-grid {
+      scrollbar-width: thin;
+      scrollbar-color: rgba(255, 255, 255, 0.38) rgba(12, 18, 16, 0.92);
+    }
+    body::-webkit-scrollbar,
+    .panel::-webkit-scrollbar,
+    .overlay::-webkit-scrollbar,
+    .works-grid::-webkit-scrollbar,
+    .quality-grid::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+    body::-webkit-scrollbar-track,
+    .panel::-webkit-scrollbar-track,
+    .overlay::-webkit-scrollbar-track,
+    .works-grid::-webkit-scrollbar-track,
+    .quality-grid::-webkit-scrollbar-track {
+      background: rgba(12, 18, 16, 0.65);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(4px);
+    }
+    body::-webkit-scrollbar-thumb,
+    .panel::-webkit-scrollbar-thumb,
+    .overlay::-webkit-scrollbar-thumb,
+    .works-grid::-webkit-scrollbar-thumb,
+    .quality-grid::-webkit-scrollbar-thumb {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0.08));
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+    }
+    body::-webkit-scrollbar-thumb:hover,
+    .panel::-webkit-scrollbar-thumb:hover,
+    .overlay::-webkit-scrollbar-thumb:hover,
+    .works-grid::-webkit-scrollbar-thumb:hover,
+    .quality-grid::-webkit-scrollbar-thumb:hover {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0.12));
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
     }
 
-    .mt-xs{margin-top:0.5rem;}
-    .mt-sm{margin-top:0.75rem;}
-    .mt-md{margin-top:1rem;}
+    /* Scala il layout del 10% mantenendo testi e pulsanti centrati */
+    .tw-topbar-inner,
+    .tw-bottombar-inner,
+    .hero-inner,
+    .panel,
+    .social-fab {
+      scale: var(--site-scale);
+    }
 
-    /* PRELOADER */
-    .eb-preloader-overlay {
+    .tw-topbar-inner,
+    .tw-bottombar-inner {
+      transform-origin: center top;
+    }
+
+    .hero-inner,
+    .panel {
+      transform-origin: center top;
+    }
+
+    .social-fab {
+      transform-origin: right bottom;
+    }
+
+    /* Scala meno su tablet/phone per evitare overflow */
+    @media (max-width: 1200px) {
+      :root { --site-scale: 1; }
+    }
+    @media (max-width: 768px) {
+      :root { --site-scale: 1; }
+      .tw-topbar-inner,
+      .tw-bottombar-inner,
+      .hero-inner,
+      .panel,
+      .social-fab { scale: 1; width: 100%; }
+      .tw-bottombar { height: auto; padding: 12px 16px; }
+      .tw-bottombar-inner { flex-wrap: wrap; gap: 8px; text-align: center; }
+    }
+
+
+     /* =====================
+       PRELOADER TECH WOOD
+       ===================== */
+
+    .tw-preloader-overlay {
       position: fixed;
       inset: 0;
       z-index: 9999;
-      background: #000000;
+      background: radial-gradient(circle at 50% 15%, #16352c, #0f1e18 60%, #050908 100%);
+      overflow: hidden;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      gap: clamp(1rem,1.8vw,1.4rem);
-      transition: opacity 0.6s ease, visibility 0.6s ease;
+      gap: 18px;
+      transition: opacity 0.85s ease, transform 0.85s ease, visibility 0.85s ease;
+      animation: tw-bg-flow 10s ease-in-out infinite alternate;
+      transform: translateY(0);
+      will-change: opacity, transform;
     }
-    .eb-preloader-overlay.hidden {
+
+    .tw-preloader-overlay::before {
+      content: "";
+      position: absolute;
+      inset: -20%;
+      background: radial-gradient(circle at 20% 20%, rgba(240, 162, 55, 0.08), transparent 35%),
+                  radial-gradient(circle at 80% 30%, rgba(0, 168, 89, 0.14), transparent 40%),
+                  radial-gradient(circle at 50% 80%, rgba(240, 162, 55, 0.06), transparent 45%);
+      opacity: 0.8;
+      animation: tw-aurora 12s ease-in-out infinite;
+    }
+
+    .tw-preloader-overlay.hidden {
       opacity: 0;
       visibility: hidden;
       pointer-events: none;
     }
-    .eb-preloader-inner {
+
+    .tw-preloader-overlay.fly-out {
+      opacity: 0;
+      transform: translateY(-6px);
+    }
+
+    .tw-preloader-inner {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: clamp(0.5rem,1.2vw,0.8rem);
+      gap: 12px;
+      animation: tw-pop-in 0.8s ease-out both;
+      padding: 26px 22px;
+      position: relative;
+      z-index: 1;
     }
-    .eb-preloader-circle {
-      width: clamp(9rem,18vw,16rem);
-      height: clamp(9rem,18vw,16rem);
-      border-radius: 50%;
-      border: 0.07rem solid rgba(255,255,255,0.9);
-      background: rgba(0,0,0,0.18);
+
+    .tw-preloader-logo {
+      max-width: 260px;
+      max-height: 260px;
+      display: block;
+      filter:
+        drop-shadow(0 12px 26px rgba(0, 0, 0, 0.85))
+        drop-shadow(0 0 16px rgba(196, 255, 213, 0.55));
+      opacity: 0;
+      animation:
+        tw-logo-glow 1.9s ease-out forwards,
+        tw-logo-breathe 3.6s ease-in-out 2s infinite;
+    }
+
+    .tw-preloader-overlay.fly-out {
+      pointer-events: none;
+    }
+
+    .tw-preloader-pulse {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* SCRITTA TECH WOOD PI? GRANDE, VERDE, GLOW */
+    .tw-preloader-text {
+      font-size: clamp(1.9rem, 4vw, 2.8rem);   /* pi? grande e adattiva */
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      text-indent: 0.28em;
+      font-weight: 600;
+      color: #00a859;
+      opacity: 0;
+      transform: translateY(4px);
+      animation: tw-text-fade 1.4s ease-out 0.5s forwards;
+      text-shadow:
+        0 0 6px rgba(0, 0, 0, 0.9),
+        0 0 14px rgba(0, 168, 89, 0.85);
+    }
+
+    .tw-preloader-overlay.fade-out-logo .tw-preloader-logo,
+    .tw-preloader-overlay.fade-out-logo .tw-preloader-text {
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: opacity 0.9s ease, transform 0.9s ease;
+    }
+
+    /* TOPBAR POST-PRELOAD */
+    .tw-topbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 76px;
+      background: linear-gradient(180deg, #2c2c2c, #1f1f1f);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 1rem 2.8rem rgba(0,0,0,0.78);
-      transform-origin: center center;
-      animation: eb-roll-in 1.4s ease-out forwards;
-    }
-    .eb-preloader-logo {
-      max-width: clamp(7rem,13vw,12rem);
-      max-height: clamp(7rem,13vw,12rem);
-      display: block;
-      filter: drop-shadow(0 0.4rem 1.1rem rgba(0,0,0,0.8));
-    }
-    .eb-preloader-text,
-    .eb-preloader-sub {
+      padding: 0 28px;
+      transform: translateY(-110%);
       opacity: 0;
-      transform: translateY(0.5rem);
+      transition: transform 0.7s ease, opacity 0.7s ease;
+      z-index: 900;
+      backdrop-filter: blur(6px);
     }
-    .eb-preloader-text { animation: eb-fade-up 0.7s ease-out 1s forwards; }
-    .eb-preloader-sub { animation: eb-fade-up 0.7s ease-out 1.2s forwards; }
-    .eb-preloader-text-img img,
-    .eb-preloader-sub-img img {
-      max-width: clamp(10rem,18vw,16rem);
-      height: auto;
+
+    body.preload-complete .tw-topbar {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .tw-topbar-inner {
+      width: min(calc(1200px / var(--site-scale)), calc(100% / var(--site-scale)));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .tw-topbar-logo {
+      height: clamp(56px, 7vw, 68px);
+      width: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 6px 14px rgba(0,0,0,0.45));
+      opacity: 1;
+      transform: none;
+      image-rendering: auto;
+    }
+
+    body.preload-complete .tw-topbar-logo {
+      animation: none;
+    }
+
+    @keyframes tw-pop-in {
+      0% {
+        opacity: 0;
+        transform: translateY(16px) scale(0.96);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    @keyframes tw-bg-flow {
+      0% { filter: hue-rotate(0deg) brightness(1); }
+      100% { filter: hue-rotate(-10deg) brightness(1.02); }
+    }
+
+    @keyframes tw-aurora {
+      0% { transform: translateY(0px) scale(1); opacity: 0.7; }
+      50% { transform: translateY(-12px) scale(1.02); opacity: 0.9; }
+      100% { transform: translateY(8px) scale(1.01); opacity: 0.75; }
+    }
+
+    @keyframes tw-ring-spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes tw-pulse {
+      0%, 100% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.05); opacity: 1; }
+    }
+
+    @keyframes tw-logo-glow {
+      0% {
+        opacity: 0;
+        transform: scale(0.92);
+        filter:
+          drop-shadow(0 0 0 rgba(0,0,0,0))
+          drop-shadow(0 0 0 rgba(196,255,213,0));
+      }
+      55% {
+        opacity: 1;
+        transform: scale(1.02);
+        filter:
+          drop-shadow(0 12px 30px rgba(0,0,0,0.9))
+          drop-shadow(0 0 18px rgba(196,255,213,0.7));
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+        filter:
+          drop-shadow(0 10px 24px rgba(0,0,0,0.85))
+          drop-shadow(0 0 10px rgba(196,255,213,0.35));
+      }
+    }
+
+    @keyframes tw-logo-breathe {
+      0%, 100% {
+        transform: scale(1);
+        filter:
+          drop-shadow(0 10px 24px rgba(0,0,0,0.85))
+          drop-shadow(0 0 10px rgba(196,255,213,0.35));
+      }
+      50% {
+        transform: scale(1.05);
+        filter:
+          drop-shadow(0 14px 30px rgba(0,0,0,0.95))
+          drop-shadow(0 0 18px rgba(196,255,213,0.6));
+      }
+    }
+
+    @keyframes tw-text-fade {
+      0% {
+        opacity: 0;
+        letter-spacing: 0.5em;
+        transform: translateY(6px);
+      }
+      100% {
+        opacity: 1;
+        letter-spacing: 0.28em;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes tw-topbar-logo-in {
+      0% { opacity: 0; transform: translate(-18px, -16px) scale(0.78); }
+      100% { opacity: 1; transform: translate(0,0) scale(1); }
+    }
+
+    /* =========================
+       BOTTOM BAR INFO
+       ========================= */
+    .tw-bottombar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 64px;
+      background: linear-gradient(180deg, #1f1f1f, #161616);
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      box-shadow: 0 -12px 40px rgba(0, 0, 0, 0.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 24px;
+      z-index: 850;
+      backdrop-filter: blur(6px);
+    }
+
+    .tw-bottombar-inner {
+      width: min(calc(1200px / var(--site-scale)), calc(100% / var(--site-scale)));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      color: #e8e8e8;
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .tw-bottombar a {
+      color: #e8e8e8;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .tw-bottombar a:hover {
+      color: #00a859;
+    }
+
+    .tw-bottombar-sep {
+      opacity: 0.4;
+    }
+
+    /* =========================
+       HERO + BACKGROUND
+       ========================= */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px clamp(20px, 4vw, 60px);
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+
+      opacity: 1;
+      transition: opacity 0.8s ease-in-out;
+      isolation: isolate;
+    }
+    @media (max-width: 900px) {
+      .hero { background-attachment: scroll; }
+    }
+
+    .hero-slider {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 0;
+    }
+    .hero-slide {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transition: opacity 0.7s ease;
+    }
+    .hero-slide.is-active { opacity: 1; }
+    .hero-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
       display: block;
-      filter: invert(1) brightness(2) drop-shadow(0 0.25rem 0.75rem rgba(0,0,0,0.9));
     }
-    @keyframes eb-roll-in {
-      0% { transform: translateX(-120vw) rotate(-720deg) scale(0.9); }
-      100% { transform: translateX(0) rotate(0deg) scale(1); }
-    }
-    @keyframes eb-fade-up {
-      0% { opacity: 0; transform: translateY(0.625rem); }
-      100% { opacity: 1; transform: translateY(0); }
+    .hero-gradient {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.65));
+      pointer-events: none;
+      z-index: 1;
     }
 
-    /* HEADER */
-    header{
-      position:sticky;
-      top:0;
-      z-index:40;
-      backdrop-filter:blur(clamp(0.9rem,1.6vw,1.2rem));
-      background:linear-gradient(to bottom,rgba(0,0,0,0.9),rgba(0,0,0,0.75),transparent);
-      border-bottom:0.07rem solid rgba(148,163,184,0.18);
-    }
-    .nav{
-      min-height:var(--header-height);
-      display:grid;
-      grid-template-columns: auto 1fr auto;
-      align-items:center;
-      gap:clamp(1rem,3vw,1.6rem);
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.35),
+        rgba(0,0,0,0.55)
+      );
+      z-index: -1;
     }
 
-    .brand{
-      display:flex;
-      align-items:center;
-      gap:clamp(0.65rem,1.5vw,0.9rem);
-    }
-    .brand{
-      height:100%;
-    }
-
-    .brand-logo{
-      width:clamp(2.6rem,3.5vw,3rem);
-      height:clamp(2.6rem,3.5vw,3rem);
-      border-radius:50%;
-      overflow:hidden;
-      border:0.12rem solid var(--primary);
-      box-shadow:0 0.4rem 1rem rgba(0,0,0,0.8);
-      flex-shrink:0;
-    }
-    .brand-logo img{
-      width:100%;
-      height:100%;
-      object-fit:cover;
-    }
-    .brand-text{
-      display:flex;
-      flex-direction:column;
-      line-height:1.1;
-    }
-    .brand-main{
-      font-family:"Cinzel",serif;
-      font-size:clamp(1.05rem,0.8vw + 1rem,1.3rem);
-      letter-spacing:.12em;
-      text-transform:uppercase;
-    }
-    .brand-sub{
-      font-size:clamp(0.7rem,0.4vw + 0.6rem,0.85rem);
-      letter-spacing:.3em;
-      text-transform:uppercase;
-      color:var(--muted);
-    }
-    .nav-links{
-      justify-self:center;
-      display:flex;
-      align-items:center;
-      gap:clamp(0.5rem,1.2vw,0.9rem);
-      flex-wrap:nowrap;
+    .hero-inner {
+      width: min(calc(1200px / var(--site-scale)), calc(100% / var(--site-scale)));
+      max-width: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 60px;
+      position: relative;
+      z-index: 2;
     }
 
-    .nav-links a{
-      font-size:clamp(0.7rem,0.3vw + 0.65rem,0.85rem);
-      letter-spacing:.2em;
-      text-transform:uppercase;
-      padding:clamp(0.45rem,1vw,0.75rem) clamp(0.65rem,1.6vw,1.1rem);
-      border-radius:999px;
-      color:var(--muted);
-      border:0.07rem solid transparent;
-      transition:all .18s ease;
-      background:rgba(0,0,0,0.5);
-    }
-    .nav-links a:hover{
-      color:var(--text);
-      border-color:rgba(148,163,184,0.7);
-      background:rgba(5,5,5,0.8);
-    }
-    .nav-toggle{
-      display:none; /* desktop default */
-      background:none;
-      border:none;
-      cursor:pointer;
-      height:100%;
-      flex-direction:column;
-      justify-content:center;
-      align-items:center;
-      gap:0.35rem;
-      justify-self:end;
+    /* TITOLO A SINISTRA */
+    .hero-top {
+      flex: 1;
+      text-align: center;
+      margin-left: 0;
     }
 
-    .nav-toggle span{
-      width:1.6rem;
-      height:0.12rem;
-      background:#fff;
-      border-radius:2px;
-      display:block;
-    }
-    .mobile-menu{
-      position:fixed;
-      top:var(--header-height);
-      left:0;
-      width:100%;
-      background:rgba(0,0,0,0.95);
-      backdrop-filter:blur(10px);
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      gap:1.2rem;
-      padding:2rem 0;
-      transform:translateY(-120%);
-      transition:transform .3s ease;
-      z-index:39;
-    }
-    .mobile-menu a{
-      font-size:0.9rem;
-      letter-spacing:.25em;
-      text-transform:uppercase;
-      color:#f9fafb;
-    }
-    .mobile-menu.is-open{
-      transform:translateY(0);
-    }
-    .btn{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      gap:0.5rem;
-      padding:clamp(0.65rem,1.6vw,0.95rem) clamp(0.9rem,2vw,1.2rem);
-      border-radius:999px;
-      font-size:clamp(0.75rem,0.3vw + 0.7rem,0.95rem);
-      letter-spacing:.2em;
-      text-transform:uppercase;
-      border:0.07rem solid transparent;
-      cursor:pointer;
-      transition:all .2s ease;
-      white-space:nowrap;
-    }
-    .btn-primary{
-      background:linear-gradient(to right,#111112,#000);
-      border-color:rgba(148,163,184,0.45);
-      box-shadow:0 1rem 2.4rem rgba(0,0,0,0.55);
-      color:#fff;
-    }
-    .btn-primary:hover{
-      transform:translateY(-0.06rem) scale(1.01);
-      box-shadow:0 1.4rem 2.8rem rgba(0,0,0,0.75);
-    }
-    .btn-outline{
-      border-color:rgba(148,163,184,0.6);
-      background:rgba(5,5,5,0.7);
-      color:var(--text);
-    }
-    .btn-outline:hover{
-      background:rgba(0,0,0,0.95);
-      border-color:rgba(148,163,184,0.9);
+    .hero-title {
+      font-size: clamp(40px, 6vw, 60px);
+      font-weight: 500;
+      text-transform: none;
+      letter-spacing: 0.16em;
+      white-space: nowrap;
     }
 
-    /* HERO */
-    .hero{padding:0;}
-    .hero-full{
-      position:relative;
-      min-height:calc(100vh - var(--header-height));
-      overflow:hidden;
-    }
-    @supports (height: 100dvh){
-      .hero-full{min-height:calc(100dvh - var(--header-height));}
-    }
-    .hero-slider{
-      position:absolute;
-      inset:0;
-      width:100%;
-      height:100%;
-      overflow:hidden;
-    }
-    .hero-slide{
-      position:absolute;
-      inset:0;
-      opacity:0;
-      transition:opacity .7s ease;
-    }
-    .hero-slide{
-      position:absolute;
-      inset:0;
-    }
-    .hero-slide.is-active{opacity:1;}
-    .hero-slide img{
-      width:100%;
-      height:100%;
-      object-fit:cover;
-      image-rendering:auto;
-      object-position:center center;
-    }
-    .hero-gradient{
-      position:absolute;
-      inset:0;
-      background:linear-gradient(to top,rgba(0,0,0,0.55),rgba(0,0,0,0.08));
-      pointer-events:none;
-    }
-    .hero-cta-wrapper{
-      position:absolute;
-      left:50%;
-      bottom:clamp(1.5rem,3vw,3rem);
-      transform:translateX(-50%);
-      display:flex;
-      flex-direction:row;
-      gap:clamp(0.8rem,1.6vw,1.4rem);
-      align-items:center;
-      justify-content:center;
-      flex-wrap:wrap;
-      z-index:30;
-      width:min(92vw,42rem);
-    }
-    .hero-cta{
-      padding:clamp(0.75rem,1.6vw,1rem) clamp(1.2rem,2.6vw,1.7rem);
-      border-radius:999px;
-      font-size:clamp(0.8rem,0.35vw + 0.75rem,1rem);
-      font-weight:600;
-      letter-spacing:.2em;
-      text-transform:uppercase;
-      text-align:center;
-      border:0.07rem solid transparent;
-      cursor:pointer;
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      min-width:clamp(12rem,24vw,15rem);
-      backdrop-filter:blur(0.35rem);
-    }
-    .hero-cta-primary{
-      background:linear-gradient(to right,#111112,#000);
-      border-color:rgba(148,163,184,0.55);
-      color:#fff;
-      box-shadow:0 1rem 2.5rem rgba(0,0,0,0.7);
-    }
-    .hero-cta-outline{
-      background:rgba(0,0,0,0.7);
-      border-color:rgba(148,163,184,0.8);
-      color:#f9fafb;
+    .hero-subtitle {
+      margin-top: 8px;
+      font-size: 14px;
+      font-weight: 300;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      opacity: 0.9;
     }
 
-    /* SECTIONS */
-    section{
-      padding:clamp(3.25rem,6vw,5.5rem) 0;
-      border-top:0.07rem solid rgba(15,15,15,0.9);
-    }
-    .section-header{
-      display:flex;
-      align-items:flex-end;
-      justify-content:space-between;
-      gap:clamp(0.75rem,1.8vw,1.2rem);
-      margin-bottom:clamp(1.5rem,3vw,2.2rem);
-      flex-wrap:wrap;
-    }
-    .section-title{
-      font-family:"Cinzel",serif;
-      font-size:clamp(1.35rem,0.9vw + 1.15rem,1.85rem);
-      letter-spacing:.08em;
-      text-transform:uppercase;
-    }
-    .section-tagline{
-      font-size:clamp(0.85rem,0.4vw + 0.75rem,1rem);
-      color:var(--muted);
-      max-width:24rem;
+    /* =========================
+       MENU QUADRATI 2x2 A DESTRA
+       ========================= */
+    .hero-menu {
+      flex: 1;
+      display: flex;
+      justify-content: center;
     }
 
-    /* ABOUT */
-    .about-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));
-      gap:clamp(1.1rem,2vw,1.6rem);
-      align-items:stretch;
-    }
-    .about-card{
-      background:var(--surface-soft);
-      border-radius:var(--radius-xl);
-      padding:clamp(1.25rem,2vw,1.6rem) clamp(1.25rem,2vw,1.6rem) clamp(1.1rem,1.8vw,1.4rem);
-      border:0.07rem solid rgba(31,31,31,0.95);
-      box-shadow:var(--shadow-soft);
-      font-size:clamp(0.9rem,0.35vw + 0.85rem,1.05rem);
-      line-height:1.65;
-      color:var(--muted);
-    }
-    .about-card h3{
-      font-family:"Cinzel",serif;
-      font-size:clamp(1.1rem,0.6vw + 1rem,1.25rem);
-      letter-spacing:.15em;
-      text-transform:uppercase;
-      margin-bottom:0.5rem;
-      color:var(--text);
-    }
-    .about-points{
-      margin-top:0.75rem;
-      display:grid;
-      gap:0.35rem;
-      font-size:clamp(0.85rem,0.3vw + 0.8rem,0.95rem);
-    }
-    .about-points span::before{
-      content:"• ";
-      color:var(--primary);
-    }
-    #about .about-card{
-      font-size:clamp(1rem,0.45vw + 0.95rem,1.2rem);
-      line-height:1.7;
-    }
-    #about .about-card h3{
-      font-size:clamp(1.25rem,0.8vw + 1.1rem,1.45rem);
-    }
-    #about .about-points{
-      font-size:clamp(0.95rem,0.4vw + 0.9rem,1.1rem);
-    }
-    .about-photo{
-      position:relative;
-      border-radius:var(--radius-xl);
-      overflow:hidden;
-      border:0.07rem solid rgba(31,31,31,0.95);
-      background:#050505;
-      box-shadow:var(--shadow-soft);
-        }
-    .about-photo img{
-      width:100%;
-      height:auto;
-      object-fit:cover;
-      aspect-ratio: 3 / 4;
-      transform:scale(1.02);
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(180px, 240px));
+      gap: 26px;
     }
 
-    .about-photo:hover img{
-      transform:scale(1.06);
-      filter:brightness(1.03);
-    }
-    .about-photo-tag{
-      position:absolute;
-      left:clamp(0.75rem,1.8vw,1rem);
-      bottom:clamp(0.75rem,1.8vw,1rem);
-      padding:0.6rem 0.85rem;
-      border-radius:999px;
-      background:rgba(0,0,0,0.9);
-      border:0.07rem solid rgba(148,163,184,0.6);
-      font-size:clamp(0.65rem,0.4vw + 0.55rem,0.8rem);
-      letter-spacing:.24em;
-      text-transform:uppercase;
-      color:var(--muted);
-    }
-
-    /* SERVICES */
-    .services-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));
-      gap:clamp(1rem,2vw,1.5rem);
-    }
-    .card{
-      background:radial-gradient(circle at top left,#181818 0,#050505 60%);
-      border-radius:var(--radius-lg);
-      border:0.07rem solid rgba(31,31,31,0.95);
-      padding:clamp(1rem,2vw,1.4rem) clamp(1rem,2vw,1.4rem) clamp(0.9rem,1.6vw,1.1rem);
-      display:flex;
-      flex-direction:column;
-      gap:0.4rem;
-      box-shadow:0 1.1rem 2.5rem rgba(0,0,0,0.55);
-    }
-    .card-header{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:0.4rem;
-    }
-    .card-title{
-      font-size:clamp(0.95rem,0.3vw + 0.9rem,1.05rem);
-      letter-spacing:.16em;
-      text-transform:uppercase;
-    }
-    .card-price{
-      font-size:clamp(0.95rem,0.3vw + 0.9rem,1.05rem);
-      font-weight:600;
-      letter-spacing:.12em;
-      text-transform:uppercase;
-      color:#fecaca;
-    }
-    .card-desc{
-      font-size:clamp(0.85rem,0.3vw + 0.8rem,0.95rem);
-      color:var(--muted);
-    }
-    .card-label{
-      font-size:clamp(0.7rem,0.3vw + 0.65rem,0.8rem);
-      text-transform:uppercase;
-      letter-spacing:.18em;
-      color:#f97373;
+    .menu-card {
+      border: 1px solid rgba(255,255,255,0.45);
+      border-radius: 12px;
+      padding: 24px 18px;
+      text-align: center;
+      background: linear-gradient(145deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      cursor: pointer;
+      box-shadow:
+        0 16px 40px rgba(0, 0, 0, 0.35),
+        0 0 0 1px rgba(255,255,255,0.06) inset;
+      transition: background-color var(--transition-fast),
+                  transform var(--transition-fast),
+                  box-shadow var(--transition-fast),
+                  border-color var(--transition-fast),
+                  filter var(--transition-fast);
     }
 
-    /* GALLERY */
-    .gallery-shell{
-      border-radius:var(--radius-xl);
-      background:radial-gradient(circle at top,#181818 0,#050505 60%);
-      border:0.07rem solid rgba(31,31,31,0.95);
-      padding:clamp(1rem,2vw,1.3rem) clamp(1rem,2vw,1.4rem);
-      box-shadow:var(--shadow-soft);
-    }
-    .gallery-track{position:relative;}
-    .gallery-row{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(12.5rem,1fr));
-      gap:clamp(0.65rem,1.2vw,1rem);
-    }
-    .gallery-row:not(.is-active){display:none;}
-    .shot{
-      position:relative;
-      aspect-ratio:3/4;
-      max-height:clamp(16rem,34vw,24rem);
-      overflow:hidden;
-      border-radius:0.9rem;
-      border:0.07rem solid rgba(30,30,30,0.9);
-      background:#050505;
-      cursor:zoom-in;
-    }
-    .shot img{
-      width:100%;
-      height:100%;
-      object-fit:cover;
-      transition:transform .4s ease, filter .4s ease;
-      transform:scale(1.02);
-    }
-    .shot:hover img{
-      transform:scale(1.06);
-      filter:brightness(1.02);
-    }
-    .gallery-controls{
-      margin-top:clamp(0.8rem,1.4vw,1rem);
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      gap:clamp(0.7rem,1.2vw,1rem);
-      flex-wrap:wrap;
-    }
-    .gallery-btn{
-      padding:0.65rem 1rem;
-      border-radius:999px;
-      border:0.07rem solid rgba(148,163,184,0.7);
-      background:rgba(15,23,42,0.9);
-      color:var(--text);
-      font-size:clamp(0.8rem,0.3vw + 0.75rem,0.95rem);
-      letter-spacing:.18em;
-      text-transform:uppercase;
-      cursor:pointer;
-    }
-    .gallery-btn:hover{background:rgba(15,23,42,1);}
-    .gallery-status{
-      font-size:clamp(0.75rem,0.3vw + 0.7rem,0.9rem);
-      color:var(--muted);
-    }
-    .gallery-modal{
-      position:fixed;
-      inset:0;
-      background:rgba(0,0,0,0.85);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      opacity:0;
-      pointer-events:none;
-      transition:opacity .25s ease;
-      z-index:80;
-      padding:clamp(1rem,4vw,2.4rem);
-    }
-    .gallery-modal.is-visible{
-      opacity:1;
-      pointer-events:auto;
-    }
-    .gallery-modal img{
-      max-width:min(92vw,72rem);
-      max-height:92vh;
-      border-radius:1rem;
-      box-shadow:0 1.5rem 3.5rem rgba(0,0,0,0.9);
-    }
-    .gallery-hint{
-      margin:clamp(0.8rem,1.4vw,1.1rem) auto 0;
-      padding:0.5rem 1rem;
-      display:inline-flex;
-      align-items:center;
-      gap:0.55rem;
-      color:var(--muted);
-      background:rgba(15,15,15,0.72);
-      border:0.08rem solid rgba(148,163,184,0.5);
-      border-radius:999px;
-      font-size:clamp(0.87rem,0.32vw + 0.8rem,0.98rem);
-      letter-spacing:.1em;
-      backdrop-filter:blur(0.25rem);
-      box-shadow:0 1rem 2.4rem rgba(0,0,0,0.35);
-    }
-    .gallery-hint-icon{
-      font-size:1.05em;
-      color:#e5e7eb;
+    .menu-card:hover {
+      background: linear-gradient(145deg, rgba(255,255,255,0.16), rgba(255,255,255,0.05));
+      transform: translateY(-3px);
+      box-shadow:
+        0 20px 48px rgba(0,0,0,0.45),
+        0 0 0 1px rgba(255,255,255,0.12) inset;
+      border-color: rgba(255,255,255,0.75);
+      filter: brightness(1.05);
     }
 
-    /* INFO + HOURS */
-    .info-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));
-      gap:clamp(1rem,2vw,1.5rem);
-      align-items:flex-start;
-    }
-    .info-card{
-      background:var(--surface-soft);
-      border-radius:var(--radius-xl);
-      padding:clamp(1.1rem,1.8vw,1.4rem);
-      border:0.07rem solid rgba(31,31,31,0.95);
-      box-shadow:var(--shadow-soft);
-    }
-    .info-row{
-      display:flex;
-      justify-content:space-between;
-      font-size:clamp(0.85rem,0.3vw + 0.8rem,0.95rem);
-      padding:0.4rem 0;
-      border-bottom:0.07rem dashed rgba(55,55,55,0.8);
-      gap:0.7rem;
-    }
-    .info-row:last-child{border-bottom:none;}
-    .info-label{
-      text-transform:uppercase;
-      letter-spacing:.2em;
-      color:var(--muted);
-      font-size:clamp(0.7rem,0.3vw + 0.65rem,0.8rem);
-    }
-    .hours-card{
-      background:var(--surface-soft);
-      border-radius:var(--radius-xl);
-      padding:clamp(1.1rem,1.8vw,1.4rem);
-      border:0.07rem solid rgba(31,31,31,0.95);
-      box-shadow:var(--shadow-soft);
-      margin-bottom:clamp(0.9rem,1.6vw,1.2rem);
-      max-width:28rem;
-    }
-    .hours-title{
-      text-transform:uppercase;
-      letter-spacing:.2em;
-      color:var(--muted);
-      font-size:clamp(0.7rem,0.3vw + 0.65rem,0.8rem);
-      margin-bottom:0.4rem;
-    }
-    .hours-lines{
-      margin:0;
-      font-size:clamp(0.9rem,0.35vw + 0.85rem,1rem);
-      line-height:1.6;
+    .menu-icon {
+      font-size: 26px;
+      margin-bottom: 10px;
     }
 
-    /* MAP */
-    .map-card{
-      border-radius:var(--radius-xl);
-      overflow:hidden;
-      border:0.07rem solid rgba(31,31,31,0.95);
-      box-shadow:var(--shadow-soft);
-      background:#050505;
-    }
-    .map{
-      width:100%;
-      height:clamp(16rem,32vw,22rem);
-      border:0;
-      display:block;
-    }
-    .map-caption{
-      font-size:clamp(0.8rem,0.3vw + 0.75rem,0.95rem);
-      padding:0.7rem 0.85rem 0.75rem;
-      color:var(--muted);
-      border-top:0.07rem solid rgba(31,31,31,0.9);
-      background:rgba(0,0,0,0.92);
+    .menu-label {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
     }
 
-    /* CONTACTS */
-    .sr-only{
-      position:absolute;
-      width:1px;
-      height:1px;
-      padding:0;
-      margin:-1px;
-      overflow:hidden;
-      clip:rect(0,0,0,0);
-      white-space:nowrap;
-      border:0;
-    }
-    .contact-actions{
-      display:flex;
-      flex-wrap:wrap;
-      gap:clamp(1rem,1.8vw,1.4rem);
-      margin-top:clamp(1.1rem,2vw,1.4rem);
-      align-items:center;
-    }
-    .contact-icon{
-      width:clamp(3.2rem,4vw,3.6rem);
-      height:clamp(3.2rem,4vw,3.6rem);
-      border-radius:50%;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      border:0.08rem solid rgba(148,163,184,0.6);
-      background:radial-gradient(circle at top,#111827 0,#020617 70%);
-      box-shadow:0 1rem 2.4rem rgba(0,0,0,0.7);
-      cursor:pointer;
-      transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease, background .18s ease;
-      color:#e5e7eb;
-    }
-    .contact-icon svg{
-      width:clamp(1.2rem,1.3vw,1.4rem);
-      height:clamp(1.2rem,1.3vw,1.4rem);
-      display:block;
-    }
-    .contact-icon-wa{
-      background:radial-gradient(circle at top,#22c55e 0,#15803d 70%);
-      border-color:rgba(34,197,94,0.9);
-      color:#ecfdf5;
-    }
-    .contact-icon:hover{
-      transform:translateY(-0.12rem);
-      box-shadow:0 1.4rem 3rem rgba(0,0,0,0.9);
+    /* ========= Tablet desktop piccolo ========= */
+    @media (max-width: 1024px) {
+      .hero-top {
+        margin-left: 0;
+      }
     }
 
-    /* STICKY WHATSAPP */
-    .wa-sticky{
-      position:fixed;
-      right:clamp(1rem,2vw,1.4rem);
-      bottom:clamp(1rem,2vw,1.4rem);
-      z-index:60;
-      display:flex;
-      align-items:center;
-      gap:0.65rem;
-      padding:clamp(0.65rem,1.5vw,1rem) clamp(1rem,2.4vw,1.6rem);
-      border-radius:999px;
-      font-size:clamp(0.75rem,0.35vw + 0.7rem,0.9rem);
-      letter-spacing:.16em;
-      text-transform:uppercase;
-      color:#e5f9f0;
-      background:linear-gradient(135deg,rgba(34,197,94,0.22),rgba(6,95,70,0.85));
-      border:0.07rem solid rgba(74,222,128,0.8);
-      box-shadow:0 1.1rem 2.8rem rgba(22,163,74,0.75);
-      backdrop-filter:blur(clamp(0.85rem,1.6vw,1.2rem)) saturate(1.4);
-      -webkit-backdrop-filter:blur(clamp(0.85rem,1.6vw,1.2rem)) saturate(1.4);
-      opacity:0;
-      pointer-events:none;
-      transform:translateY(0.4rem) scale(.97);
-      transition:opacity .25s ease-out, transform .25s ease-out, box-shadow .25s ease-out, background .25s ease-out, border-color .25s ease-out;
+    /* ========= Tablet / telefono grande ========= */
+    @media (max-width: 900px) {
+      .hero-inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+      }
 
-    }
-    .wa-sticky svg{
-      width:clamp(1.35rem,1.6vw,1.5rem);
-      height:clamp(1.35rem,1.6vw,1.5rem);
-    }
-    .wa-sticky:hover{
-      transform:translateY(-0.1rem) scale(1.01);
-      box-shadow:0 1.5rem 3.4rem rgba(22,163,74,0.82);
-      background:linear-gradient(135deg,rgba(34,197,94,0.32),rgba(6,95,70,0.95));
-    }
-    .wa-sticky.is-visible{
-      opacity:1;
-      pointer-events:auto;
-      transform:translateY(0) scale(1);
+      .hero-top {
+        text-align: center;
+        margin-left: 0;   /* niente spostamento su tablet/phone */
+      }
+
+      .hero-menu {
+        justify-content: center;
+        width: 100%;
+      }
+
+      .menu-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+
+      .menu-card {
+        padding: 18px 12px;
+      }
     }
 
-    .coming-soon-toast{
-      position:fixed;
-      left:50%;
-      bottom:clamp(1.2rem,2.6vw,1.8rem);
-      transform:translate(-50%,0.35rem);
-      background:rgba(0,0,0,0.92);
-      color:var(--text);
-      padding:0.75rem 1.4rem;
-      border-radius:var(--radius-lg);
-      border:0.07rem solid var(--border);
-      box-shadow:var(--shadow-soft);
-      font-weight:600;
-      letter-spacing:.08em;
-      text-transform:uppercase;
-      opacity:0;
-      pointer-events:none;
-      transition:opacity .22s ease, transform .22s ease;
-      z-index:120;
-    }
-    .coming-soon-toast.is-visible{
-      opacity:1;
-      transform:translate(-50%,0);
+    /* ========= Smartphone ========= */
+    @media (max-width: 600px) {
+      .hero {
+        padding-inline: 18px;
+      }
+
+      .hero-title {
+        letter-spacing: 0.16em;
+      }
+
+      .menu-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+      }
+
+      .menu-card {
+        padding: 16px 10px;
+      }
     }
 
-    footer{
-      padding:clamp(2rem,4vw,3rem) 0;
-      border-top:0.07rem solid rgba(15,15,15,0.85);
-      background:linear-gradient(to top,rgba(0,0,0,0.6),rgba(0,0,0,0.3));
-    }
-    .footer-inner{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:0.8rem;
-      flex-wrap:wrap;
-      color:var(--muted);
-      font-size:clamp(0.8rem,0.35vw + 0.75rem,0.95rem);
+    /* ========= Smartphone stretto ========= */
+    @media (max-width: 480px) {
+      .hero { padding-inline: 14px; }
+      .hero-title { white-space: normal; line-height: 1.2; }
+      .menu-grid { grid-template-columns: 1fr; }
     }
 
-    /* PRODUCT MODAL */
-    .product-modal{
-      position:fixed;
-      inset:0;
-      background:rgba(0,0,0,0.82);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      opacity:0;
-      pointer-events:none;
-      transition:opacity .3s ease;
-      z-index:90;
-      padding:clamp(1rem,3vw,2.2rem);
+    /* =========================
+       OVERLAY / POPUP
+       ========================= */
+    .overlay {
+      position: fixed;
+      inset: 0;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      background: var(--overlay-bg);
+      backdrop-filter: blur(8px);
+      z-index: 1000;
+      padding: 20px;
     }
-    .product-modal.is-visible{
-      opacity:1;
-      pointer-events:auto;
+
+    .overlay.active {
+      display: flex;
     }
-    .product-modal-inner{
-      width:min(68rem,94vw);
-      background:var(--surface);
-      border-radius:var(--radius-xl);
-      padding:clamp(1.4rem,2.5vw,2rem);
-      border:0.07rem solid rgba(31,31,31,0.95);
-      box-shadow:0 1.6rem 3.2rem rgba(0,0,0,0.75);
-      position:relative;
-      max-height:calc(100vh - 2.5rem);
-      overflow-x:hidden;
-      overflow-y:auto;
-      -webkit-overflow-scrolling:touch;
+
+    .panel {
+      background: rgba(255, 255, 255, 0.12);
+      color: #f5f5f5;
+      padding: clamp(20px, 4vw, 40px);
+      border-radius: 16px;
+      max-width: calc(960px / var(--site-scale));
+      width: calc(100% / var(--site-scale));
+      max-height: calc(90vh / var(--site-scale));
+      overflow-y: auto;
+      box-shadow: 0 18px 60px rgba(0, 0, 0, 0.45);
+      position: relative;
+      animation: fadeInUp 0.35s ease;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
     }
-    .product-modal-close{
-      position:absolute;
-      top:clamp(0.9rem,1.6vw,1.2rem);
-      right:clamp(0.9rem,1.6vw,1.2rem);
-      background:rgba(0,0,0,0.75);
-      border:0.07rem solid rgba(148,163,184,0.6);
-      color:var(--text);
-      border-radius:50%;
-      width:clamp(2.2rem,3vw,2.6rem);
-      height:clamp(2.2rem,3vw,2.6rem);
-      font-size:1.1rem;
-      cursor:pointer;
+
+    .panel.panel-works {
+      max-width: calc(1200px / var(--site-scale));
     }
-    .product-modal-title{
-      font-family:"Cinzel",serif;
-      font-size:clamp(1.2rem,0.7vw + 1.1rem,1.5rem);
-      letter-spacing:.12em;
-      text-transform:uppercase;
+
+    .panel-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 14px;
     }
-    .product-modal-sub{
-      color:var(--muted);
-      margin-top:0.4rem;
-      font-size:clamp(0.9rem,0.35vw + 0.85rem,1rem);
+
+    .panel-title {
+      font-size: 20px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
     }
-    .product-list-view{margin-top:clamp(1.2rem,2vw,1.6rem);}
-    .product-cat-grid{
-      display:grid;
-      /* SEMPRE 2 colonne, si restringono ma non diventano mai una lista */
+
+    .close-btn {
+      border: none;
+      background: transparent;
+      font-size: 22px;
+      cursor: pointer;
+      color: #555;
+      padding: 4px;
+      line-height: 1;
+      transition: color var(--transition-fast), transform var(--transition-fast);
+    }
+
+    .close-btn:hover {
+      color: #000;
+      transform: scale(1.06);
+    }
+
+    .panel-content {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #ededed;
+    }
+
+    .panel-content p + p {
+      margin-top: 10px;
+    }
+
+    .panel-highlight {
+      margin-top: 12px;
+      padding: 12px 14px;
+      border-left: 3px solid rgba(0, 168, 89, 0.45);
+      background: linear-gradient(135deg, rgba(0, 168, 89, 0.14), rgba(255, 255, 255, 0.04));
+      border-radius: 6px;
+      font-size: 14px;
+      color: #e8f7ef;
+    }
+
+    .panel-grid {
+      display: grid;
+      grid-template-columns: 2fr 3fr;
+      gap: 20px;
+      margin-top: 12px;
+      align-items: flex-start;
+    }
+
+    .panel-grid img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .quality-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 14px;
+      margin-top: 12px;
+    }
+
+    .quality-card {
+      background: rgba(12, 12, 12, 0.72);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.28);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+
+    .quality-media {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      margin-bottom: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .quality-photo {
+      display: block;
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      filter: saturate(1.05);
+    }
+
+    .quality-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .quality-card h4 {
+      margin-top: 8px;
+      font-size: 16px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .quality-card p {
+      margin-top: 8px;
+      color: #e7e7e7;
+      line-height: 1.6;
+    }
+
+    .quality-list {
+      margin-top: 10px;
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .quality-list li {
+      position: relative;
+      padding-left: 18px;
+      margin-bottom: 6px;
+      color: #dfeae3;
+    }
+
+    .quality-list li::before {
+      content: "-";
+      position: absolute;
+      left: 2px;
+      color: #f0a237;
+    }
+
+    @media (max-width: 780px) {
+      .panel-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .panel {
+        width: 100%;
+        max-width: 100%;
+        max-height: 88vh;
+        padding: 16px 14px;
+      }
+      .panel-header {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 10px;
+      }
+      .panel-title { font-size: 18px; }
+      .close-btn { margin-left: auto; }
+    }
+
+    .works-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      grid-auto-rows: 300px;
+      margin-top: 12px;
+      align-items: stretch;
+    }
+
+    .works-grid img { border-radius: 10px; }
+
+    .works-card {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+      isolation: isolate;
+      background: #0d0d0d;
+      border: 1px solid rgba(255,255,255,0.12);
+      display: flex;
+      align-items: stretch;
+      justify-content: stretch;
+    }
+
+    .works-card::after {
+      display: none;
+    }
+
+    .works-card-cta {
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      padding: 8px 12px;
+      background: rgba(0,0,0,0.55);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 999px;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #fefefe;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+      transition: transform var(--transition-fast), background-color var(--transition-fast);
+    }
+
+    .works-card:hover .works-card-cta {
+      transform: translateY(-2px);
+      background: rgba(0,0,0,0.72);
+    }
+
+    .works-card img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .works-card-label {
+      position: absolute;
+      left: 12px;
+      bottom: 10px;
+      z-index: 2;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+
+    .works-section {
+      margin-top: 16px;
+    }
+
+    .works-section-title {
+      font-size: 14px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      color: #cde8d9;
+    }
+
+    .works-hint {
+      font-size: 13px;
+      color: #d8e4dc;
+      opacity: 0.82;
+      margin-top: 6px;
+      letter-spacing: 0.04em;
+    }
+
+    .works-sections-grid {
+      display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap:clamp(0.9rem,1.8vw,1.4rem);
+      gap: 18px;
+      margin-top: 12px;
     }
 
-    .product-cat-card{
-      background:radial-gradient(circle at top,#181818 0,#050505 70%);
-      border:0.07rem solid rgba(40,40,40,0.95);
-      border-radius:var(--radius-lg);
-      overflow:hidden;
-      cursor:pointer;
-      transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
-    }
-    .product-cat-card:hover{
-      transform:translateY(-0.15rem);
-      box-shadow:0 1.2rem 2.6rem rgba(0,0,0,0.7);
-      border-color:rgba(148,163,184,0.6);
-    }
-    .product-cat-image{
-      height:clamp(9rem,18vw,12rem);
-      overflow:hidden;
-      background:#050505;
-    }
-    .product-cat-image img{
-      width:100%;
-      height:100%;
-      object-fit:cover;
-      object-position:center;
-      display:block;
-    }
-    .product-cat-label{
-      padding:0.8rem 1rem;
-      text-align:center;
-      letter-spacing:.18em;
-      text-transform:uppercase;
-      font-size:clamp(0.85rem,0.3vw + 0.8rem,0.95rem);
-      color:var(--text);
-    }
-    .product-detail-view{
-      display:none;
-      margin-top:clamp(1rem,2vw,1.4rem);
-    }
-    .product-back-btn{
-      padding:0.65rem 1rem;
-      border-radius:999px;
-      border:0.07rem solid rgba(148,163,184,0.7);
-      background:rgba(0,0,0,0.6);
-      color:var(--text);
-      cursor:pointer;
-      letter-spacing:.12em;
-      text-transform:uppercase;
-      font-size:clamp(0.8rem,0.3vw + 0.75rem,0.95rem);
-      margin-bottom:0.8rem;
-    }
-    .product-detail-title{
-      font-size:clamp(1.05rem,0.5vw + 0.95rem,1.25rem);
-      letter-spacing:.1em;
-      text-transform:uppercase;
-      margin-bottom:0.8rem;
-    }
-    .product-detail-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(10rem,1fr));
-      gap:clamp(0.75rem,1.6vw,1.2rem);
-    }
-    .product-detail-grid figure{
-      border-radius:1rem;
-      overflow:hidden;
-      border:0.07rem solid rgba(40,40,40,0.95);
-      background:#050505;
-      cursor:zoom-in;
-      aspect-ratio:1/1;
-    }
-    .product-detail-grid img{
-      width:100%;
-      height:100%;
-      object-fit:cover;
-      object-position:center;
-    }
-    #product-zoom-modal{
-      position:fixed;
-      inset:0;
-      background:rgba(0,0,0,0.85);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      opacity:0;
-      pointer-events:none;
-      transition:opacity .25s ease;
-      z-index:95;
-      padding:clamp(1rem,4vw,2.2rem);
-    }
-    #product-zoom-modal.is-visible{
-      opacity:1;
-      pointer-events:auto;
-    }
-    #product-zoom-modal img{
-      max-width:min(92vw,70rem);
-      max-height:92vh;
-      border-radius:1rem;
-      box-shadow:0 1.4rem 3.2rem rgba(0,0,0,0.9);
-    }
-
-    /* REVEAL */
-    .reveal{
-      opacity:0;
-      transform:translateY(1rem);
-      transition:opacity .6s ease, transform .6s ease;
-    }
-    .reveal.visible{
-      opacity:1;
-      transform:translateY(0);
-    }
-    @media (max-width: 48rem){
-      .nav{
-        grid-template-columns:auto 1fr auto;
-        justify-items:start;
+    @media (max-width: 720px) {
+      .works-sections-grid {
+        grid-template-columns: 1fr;
       }
-      .brand{
-        justify-content:flex-start;
-      }
-      .nav-links{
-        display:none;
-      }
-      .nav-toggle{
-        display:flex;
-      }
-
-
-    }
-    /* RESPONSIVE TWEAKS */
-    @media (max-width: 56rem){
-      .hero-cta-wrapper{width:95vw;}
-      .wa-sticky{right:clamp(0.9rem,3vw,1.3rem); bottom:clamp(0.9rem,3vw,1.3rem);}
-    }
-    @media (max-width: 42rem){
-      .nav{justify-content:center;}
-      .hero-cta-wrapper{flex-direction:column;}
-      .hero-cta{width:100%;}
-      .footer-inner{justify-content:center;}
-      /* GALLERIA MOBILE: SCORRIMENTO ORIZZONTALE PULITO */
-      .gallery-track{
-        overflow-x:auto;
-        -webkit-overflow-scrolling:touch;
-        padding-bottom:0.25rem;
-        scroll-snap-type:x mandatory;
-        
-      }
-      
-
-      .gallery-row{
-        display:grid;
-        grid-auto-flow:column;     /* tutte le foto in una sola riga */
-        grid-auto-columns:80vw;    /* ogni foto ~80% dello schermo */
-        grid-template-columns:none;/* disattiva le colonne auto-fit desktop */
-        gap:0.75rem;
-      }
-
-      .shot{
-        max-height:none;
-        height:auto;
-        min-height:0;
-        aspect-ratio:3/4;          /* formato verticale */
-        scroll-snap-align:center;  /* si “aggancia” bene allo scroll */
-      }
-
-        /* HERO MOBILE: foto a riempimento sfondo */
-      .hero-full{
-        min-height:100vh;
-      }
-      @supports (height:100dvh){
-        .hero-full{
-          min-height:100dvh;
-        }
-      }
-
-      .hero-slide.auto-mobile img{
-        width:100%;
-        height:100%;
-        object-fit:cover;
-        object-position:center center;
-      }
-
-    }
-    .hero-slider,
-    .hero-slide{
-      height:100%;
     }
 
-    .hero-slide img{
-      width:100%;
-      height:100%;
-      object-fit:cover;
-      object-position:center center;
+    .work-trigger {
+      cursor: pointer;
     }
 
-
-        .wa-sticky.hide-at-bottom {
-      opacity: 0 !important;
-      pointer-events: none !important;
-      transform: translateY(0.6rem) scale(.95);
+    .image-viewer-panel {
+      background: transparent;
+      border: none;
+      box-shadow: none;
+      padding: 0;
+      max-width: none;
+      width: auto;
     }
 
+    .image-viewer-frame {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 90vw;
+      max-height: 90vh;
+    }
+
+    .image-viewer-img {
+      max-width: 90vw;
+      max-height: 90vh;
+      border-radius: 14px;
+      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .image-viewer-close {
+      position: absolute;
+      top: -46px;
+      right: -6px;
+      background: rgba(0,0,0,0.6);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 999px;
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      transition: transform var(--transition-fast), background-color var(--transition-fast);
+    }
+
+    .image-viewer-close:hover {
+      transform: translateY(-2px);
+      background: rgba(0,0,0,0.8);
+    }
+
+    .contact-list {
+      list-style: none;
+      margin-top: 10px;
+    }
+
+    .contact-list li {
+      margin-bottom: 8px;
+    }
+
+    .contact-label {
+      font-weight: 600;
+      margin-right: 4px;
+    }
+
+    .link-inline {
+      color: #005eaa;
+      text-decoration: none;
+    }
+
+    .link-inline:hover {
+      text-decoration: underline;
+    }
+
+    .contact-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 16px;
+      padding: 12px 20px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, rgba(37, 211, 102, 0.95), rgba(18, 140, 126, 0.9));
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    .contact-cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+      filter: brightness(1.05);
+    }
+
+    .contact-cta svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+
+    .map-placeholder {
+      margin-top: 12px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      padding: 12px;
+      background: #fafafa;
+      font-size: 14px;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* =========================
+       SOCIAL FLOATING BUTTONS
+       ========================= */
+    .social-fab {
+      position: fixed;
+      right: 20px;
+      bottom: 90px;
+      display: flex;
+      flex-direction: row;
+      gap: 12px;
+      z-index: 1300;
+    }
+
+    .social-btn {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      text-decoration: none;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+
+    .social-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 36px rgba(0,0,0,0.45);
+      filter: brightness(1.06);
+    }
+
+    .social-btn svg {
+      width: 22px;
+      height: 22px;
+      fill: currentColor;
+    }
+
+    .social-btn--fb { background: linear-gradient(135deg, #1877f2, #0e52b1); }
+    .social-btn--ig { background: linear-gradient(135deg, #f77737, #e1306c 50%, #8a3ab9); }
+    .social-btn--wa { background: linear-gradient(135deg, #25d366, #128c7e); }
+
+    @media (max-width: 640px) {
+      .social-fab {
+        right: 10px;
+        bottom: 14px;
+        gap: 8px;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+      .social-btn {
+        width: 44px;
+        height: 44px;
+      }
+      .social-btn svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
   </style>
 </head>
-<body>
-  <!-- PRELOADER -->
-  <div class="eb-preloader-overlay" id="eb-preloader" aria-label="Caricamento EscoBarber">
-      <div class="eb-preloader-inner">
-        <div class="eb-preloader-text eb-preloader-text-img">
-        <img src="img/escobarberscritta.jpg" alt="EscoBarber testo">
-        </div>
-        <div class="eb-preloader-circle">
-        <img src="img/logo.jpg" alt="Logo EscoBarber" class="eb-preloader-logo">
-        </div>
-        <div class="eb-preloader-sub eb-preloader-sub-img">
-        <img src="img/dalbarrioscritta.jpg" alt="Dal Barrio">
-        </div>
+<body class="loading">
+
+<div class="tw-topbar" id="tw-topbar">
+  <div class="tw-topbar-inner">
+    <img src="img/immlogo.jpg" alt="Tech Wood logo" class="tw-topbar-logo">
+  </div>
+</div>
+
+<!-- PRELOADER TECH WOOD ? NEW MINIMAL + PULSE + COLORI FINALI -->
+  <div id="tw-preloader" class="tw-preloader-overlay">
+    <div class="tw-preloader-inner">
+      <div class="tw-preloader-pulse">
+        <img src="img/immlogo.jpg" alt="Tech Wood logo" class="tw-preloader-logo">
       </div>
+      <div class="tw-preloader-text">TECH WOOD</div>
     </div>
+  </div>
 
-  <header>
-    <div class="container nav">
-      <div class="brand">
-        <div class="brand-logo">
-          <img src="img/logo.jpg" alt="Logo EscoBarber">
-        </div>
-        <div class="brand-text">
-          <span class="brand-main">EscoBarber</span>
-        </div>
-      </div>
+  <!-- PULSANTI SOCIAL FISSI -->
+  <div class="social-fab" aria-label="Social Tech Wood">
+    <a class="social-btn social-btn--fb" href="https://www.facebook.com/techwoodcertaldo" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M22 12.07C22 6.5 17.52 2 12 2S2 6.5 2 12.07c0 5.02 3.66 9.18 8.44 9.93v-7.02H8.08v-2.91h2.36V9.79c0-2.33 1.39-3.62 3.52-3.62.7 0 1.82.12 2.3.21v2.53h-1.3c-1.27 0-1.66.8-1.66 1.62v1.94h2.83l-.45 2.91h-2.38V22c4.78-.75 8.44-4.91 8.44-9.93Z"/>
+      </svg>
+    </a>
+    <a class="social-btn social-btn--ig" href="https://www.instagram.com/techwood_made_ita/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4Zm0 2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H7Zm5 3.5A3.5 3.5 0 1 1 8.5 12 3.5 3.5 0 0 1 12 8.5Zm0 2A1.5 1.5 0 1 0 13.5 12 1.5 1.5 0 0 0 12 10.5Zm4.25-3.4a1.1 1.1 0 1 1-1.1 1.1 1.1 1.1 0 0 1 1.1-1.1Z"/>
+      </svg>
+    </a>
+    <a class="social-btn social-btn--wa" href="https://wa.me/393662898013" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M17.48 14.36c-.27-.14-1.6-.79-1.85-.87-.25-.09-.43-.14-.62.14-.18.27-.71.87-.87 1.05-.16.18-.32.2-.6.07-.27-.14-1.14-.42-2.18-1.33-.8-.71-1.34-1.58-1.5-1.85-.16-.27-.02-.41.12-.54.13-.13.27-.32.4-.47.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.47-.07-.14-.62-1.5-.85-2.05-.22-.53-.44-.46-.62-.47l-.53-.01c-.18 0-.47.07-.72.34-.25.27-.95.93-.95 2.27 0 1.34.98 2.64 1.12 2.82.14.18 1.93 2.95 4.67 4.02.65.28 1.15.45 1.54.57.65.21 1.23.18 1.69.11.52-.08 1.6-.65 1.82-1.27.22-.62.22-1.15.15-1.27-.07-.11-.25-.18-.52-.32Z"/>
+        <path d="M12 2a10 10 0 0 0-8.74 14.9L2 22l5.22-1.22A10 10 0 1 0 12 2Zm0 18a7.93 7.93 0 0 1-4.05-1.1l-.29-.17-3.07.71.65-2.99-.19-.31a7.93 7.93 0 1 1 6.95 3.86Z"/>
+      </svg>
+    </a>
+  </div>
 
-      <nav class="nav-links" aria-label="Navigazione principale">
-        <a href="#about">Chi sono</a>
-        <a href="#servizi">Servizi</a>
-        <a href="#galleria">Tagli</a>
-        <a href="#prodotti">Prodotti</a>
-      </nav>
-      <button class="nav-toggle" aria-label="Apri menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+<div class="tw-bottombar">
+  <div class="tw-bottombar-inner">
+    <span>Tech Wood © 2025</span>
+    <span class="tw-bottombar-sep">•</span>
+    <a href="privacy-policy.html">Privacy &amp; Cookie</a>
+  </div>
+</div>
+
+
+  <!-- =========================
+       HERO SECTION
+       ========================= -->
+  <section class="hero" id="hero">
+    <div class="hero-slider">
+      <figure class="hero-slide is-active">
+        <img src="img/slide/slide1.jpg" alt="Struttura in legno Tech Wood">
+      </figure>
+      <figure class="hero-slide">
+        <img src="img/slide/slide2.jpg" alt="Dettaglio realizzazione Tech Wood">
+      </figure>
+      <figure class="hero-slide">
+        <img src="img/slide/slide3.jpg" alt="Pavimentazione in legno Tech Wood">
+      </figure>
+      <figure class="hero-slide">
+        <img src="img/slide/slide4.jpg" alt="Area relax in legno Tech Wood">
+      </figure>
+      <figure class="hero-slide">
+        <img src="img/slide/slide5.jpg" alt="Copertura in legno Tech Wood">
+      </figure>
+      <figure class="hero-slide">
+        <img src="img/slide/slide6.jpg" alt="Pergola in legno Tech Wood">
+      </figure>
+      <figure class="hero-slide">
+        <img src="img/slide/slide7.jpg" alt="Carporter in legno Tech Wood">
+      </figure>
+      <figure class="hero-slide">
+        <img src="img/slide/slide8.jpg" alt="Area bimbi in legno Tech Wood">
+      </figure>
+      <figure class="hero-slide">
+        <img src="img/slide/slide9.jpg" alt="Rimessa in legno Tech Wood">
+      </figure>
+      <figure class="hero-slide">
+        <img src="img/slide/slide10.jpg" alt="Studio in legno Tech Wood">
+      </figure>
+      <figure class="hero-slide">
+        <img src="img/slide/slide11.jpg" alt="Studio in legno Tech Wood">
+      </figure>
+      <figure class="hero-slide">
+        <img src="img/slide/slide12.jpg" alt="Studio in legno Tech Wood">
+      </figure>
+      <figure class="hero-slide">
+        <img src="img/slide/slide13.jpg" alt="Studio in legno Tech Wood">
+      </figure>
+      <figure class="hero-slide">
+        <img src="img/slide/slide14.jpg" alt="Studio in legno Tech Wood">
+      </figure>
+      <figure class="hero-slide">
+        <img src="img/slide/slide15.jpg" alt="Studio in legno Tech Wood">
+      </figure>
+
     </div>
-  </header>
+    <div class="hero-gradient"></div>
+    <div class="hero-inner">
 
-  <nav class="mobile-menu" id="mobile-menu">
-    <a href="#about">Chi sono</a>
-    <a href="#servizi">Servizi</a>
-    <a href="#galleria">Tagli</a>
-    <a href="#prodotti">Prodotti</a>
-  </nav>
+      <!-- LOGO + TESTO A SINISTRA -->
+      <div class="hero-top">
+        <h1 class="hero-title">TECH WOOD</h1>
+        <p class="hero-subtitle">La bellezza del legno. La solidità dei sogni.</p>
+      </div>
 
-  <main>
-    <h1 class="sr-only">EscoBarber – Barbershop a Poggibonsi</h1>
+      <!-- 4 BOTTONI A DESTRA -->
+      <div class="hero-menu">
+        <div class="menu-grid">
+          <div class="menu-card" onclick="openOverlay('chi-siamo')">
+            <div class="menu-label">Chi siamo</div>
+          </div>
 
-    <!-- HERO -->
-    <section class="hero" aria-label="Hero EscoBarber">
-      <div class="hero-full">
-        <div class="hero-slider">
-          <figure class="hero-slide is-active">
-            <img src="img/immnegozio1.jpg" alt="Taglio sfumato EscoBarber">
-          </figure>
-          <figure class="hero-slide">
-            <img src="img/immnegozio2.jpg" alt="Servizi barba EscoBarber">
-          </figure>
-          <figure class="hero-slide">
-            <img src="img/immnegozio3.jpg" alt="Interno EscoBarber">
-          </figure>
-          <figure class="hero-slide">
-            <img src="img/immnegozio4.jpg" alt="Dettagli barber shop">
-          </figure>
-          <figure class="hero-slide">
-            <img src="img/immnegozio5.jpg" alt="Dettaglio EscoBarber 5">
-          </figure>
-          <figure class="hero-slide">
-            <img src="img/immnegozio6.jpg" alt="Dettaglio EscoBarber 6">
-          </figure>
-          <figure class="hero-slide">
-            <img src="img/immnegozio7.jpg" alt="Dettaglio EscoBarber 7">
-          </figure>
-          <figure class="hero-slide">
-            <img src="img/immnegozio8.jpg" alt="Dettaglio EscoBarber 8">
-          </figure>
-          <figure class="hero-slide">
-            <img src="img/immnegozio10.jpg" alt="Dettaglio EscoBarber 10">
-          </figure>
-          <figure class="hero-slide">
-            <img src="img/immnegozio11.jpg" alt="Dettaglio EscoBarber 11">
-          </figure>
-          <!-- Galleria extra disattivata: riattiva togliendo i commenti
-          <figure class="hero-slide">
-            <img src="img/immnegozio12.jpg" alt="Dettaglio EscoBarber 12">
-          </figure>
-          <figure class="hero-slide">
-            <img src="img/immnegozio13.jpg" alt="Dettaglio EscoBarber 13">
-          </figure>
-          <figure class="hero-slide">
-            <img src="img/immnegozio14.jpg" alt="Dettaglio EscoBarber 14">
-          </figure>
-          <figure class="hero-slide">
-            <img src="img/immnegozio15.jpg" alt="Dettaglio EscoBarber 15">
-          </figure>
-           -->
+          <div class="menu-card" onclick="openOverlay('i-nostri-lavori')">
+            <div class="menu-label">I nostri lavori</div>
+          </div>
 
-          <div class="hero-gradient"></div>
-        </div>
+          <div class="menu-card" onclick="openOverlay('contatti')">
+            <div class="menu-label">Contatti</div>
+          </div>
 
-        <div class="hero-cta-wrapper">
-          <a class="hero-cta hero-cta-primary" href="https://wa.me/393751110430?text=Ciao%20EscoBarber%2C%20vorrei%20un%20appuntamento.">
-            Prenota su WhatsApp
-          </a>
-          <a class="hero-cta hero-cta-outline" href="#servizi">
-            Scopri i servizi
-          </a>
+          <div class="menu-card" onclick="openOverlay('qualita')">
+            <div class="menu-label">Qualità</div>
+          </div>
         </div>
       </div>
-    </section>
 
-    <!-- ABOUT -->
-    <section id="about">
-      <div class="container">
-        <div class="section-header">
-          <div>
-            <h2 class="section-title">Chi Sono</h2>
-            <p class="section-tagline">
-          </div>  
-        </div>
+    </div>
+  </section>
 
-        <div class="about-grid reveal" aria-label="Chi sono">
-          <article class="about-card">
-            <p>
-              Luis è il fondatore di EscoBarber e il volto che trovi sempre dietro alla poltrona.
-              Nato come barbiere di quartiere, ha portato a Poggibonsi uno stile che unisce
-              cultura chicana, disciplina e attenzione maniacale per i dettagli.Nel negozio non entri solo per “fare i capelli”,
-              ma per uscire in ordine, sicuro e con un look che ti rappresenta davvero.
-            </p>
-
-          </article>
-
-          <figure class="about-photo">
-            <img src="img/immluis.jpg" alt="Poltrona barbershop EscoBarber">
-          </figure>
-        </div>
+  <!-- =========================
+       OVERLAY: CHI SIAMO
+       ========================= -->
+  <div id="overlay-chi-siamo" class="overlay">
+    <div class="panel">
+      <div class="panel-header">
+        <h2 class="panel-title">Chi Siamo</h2>
+        <button class="close-btn" onclick="closeOverlay('chi-siamo')" aria-label="Chiudi">x</button>
       </div>
-    </section>
-
-    <!-- SERVIZI -->
-    <section id="servizi">
-      <div class="container">
-        <div class="section-header">
-          <div>
-            <h2 class="section-title">Servizi</h2>
-            <p class="section-tagline">
-              Fade, rasature e pacchetti completi. Precisione da studio, vibe di strada.
-            </p>
-          </div>
-        </div>
-
-        <div class="services-grid reveal" aria-label="Servizi barbershop">
-          <article class="card">
-            <div class="card-header">
-              <h3 class="card-title">Taglio</h3>
-              <span class="card-price">€20</span>
-            </div>
-            <p class="card-desc">
-              Fade netti, linee dritte, styling a caldo con prodotti EscoBarber.
-            </p>
-            <span class="card-label">30 minuti</span>
-          </article>
-
-          <article class="card">
-            <div class="card-header">
-              <h3 class="card-title">Taglio bimbi</h3>
-              <span class="card-price">€15</span>
-            </div>
-            <p class="card-desc">
-              Taglio kids con attenzione, pazienza e comfort.
-            </p>
-            <span class="card-label">30 minuti</span>
-          </article>
-
-          <article class="card">
-            <div class="card-header">
-              <h3 class="card-title">Barba</h3>
-              <span class="card-price">€10</span>
-            </div>
-            <p class="card-desc">
-              Modellatura, rifinitura a rasoio, panni caldi e balsamo lenitivo.
-            </p>
-            <span class="card-label">30 minuti</span>
-          </article>
-
-          <article class="card">
-            <div class="card-header">
-              <h3 class="card-title">Taglio + Barba</h3>
-              <span class="card-price">€25</span>
-            </div>
-            <p class="card-desc">
-              Pacchetto completo: testa + barba, esperienza piena EscoBarber.
-            </p>
-            <span class="card-label">Pacchetto completo</span>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- GALLERIA -->
-    <section id="galleria">
-      <div class="container">
-        <div class="section-header">
-          <div>
-            <h2 class="section-title">I nostri tagli</h2>
-            <p class="section-tagline"></p>
-          </div>
-        </div>
-
-        <div class="gallery-shell reveal" aria-label="Galleria immagini tagli EscoBarber">
-        <div class="gallery-track">
-          <div class="gallery-row is-active">
-            <figure class="shot">
-              <img src="img/cut1.jpg" alt="Taglio sfumato 1">
-            </figure>
-            <figure class="shot">
-              <img src="img/cut2.jpg" alt="Taglio sfumato 2">
-            </figure>
-            <figure class="shot">
-              <img src="img/cut3.jpg" alt="Taglio sfumato 3">
-            </figure>
-            <figure class="shot">
-              <img src="img/cut4.jpg" alt="Taglio sfumato 4">
-            </figure>
-          </div>
-
-          <!-- Galleria extra disattivata: riattiva togliendo i commenti
-          <div class="gallery-row">
-            <figure class="shot">
-              <img src="img/cut5.jpg" alt="Taglio sfumato 5">
-            </figure>
-            <figure class="shot">
-              <img src="img/cut6.jpg" alt="Taglio sfumato 6">
-            </figure>
-          </div>
-          <div class="gallery-row">
-            <figure class="shot"><img src="img/cut7.jpg" alt="Taglio sfumato 7"></figure>
-            <figure class="shot"><img src="img/cut8.jpg" alt="Taglio sfumato 8"></figure>
-            <figure class="shot"><img src="img/cut9.jpg" alt="Taglio sfumato 9"></figure>
-          </div>
-
-          <div class="gallery-row">
-            <figure class="shot"><img src="img/cut10.jpg" alt="Taglio sfumato 10"></figure>
-            <figure class="shot"><img src="img/cut11.jpg" alt="Taglio sfumato 11"></figure>
-            <figure class="shot"><img src="img/cut12.jpg" alt="Taglio sfumato 12"></figure>
-          </div>
-
-          <div class="gallery-row">
-            <figure class="shot"><img src="img/cut13.jpg" alt="Taglio sfumato 13"></figure>
-            <figure class="shot"><img src="img/cut14.jpg" alt="Taglio sfumato 14"></figure>
-            <figure class="shot"><img src="img/cut15.jpg" alt="Taglio sfumato 15"></figure>
-          </div>
-          -->
-          <p class="gallery-hint">
-            Scorri le foto
-            <span class="gallery-hint-icon">↔</span>
+      <div class="panel-grid panel-content">
+        <div>
+          <p>
+            TECH WOOD è un'azienda giovane e dinamica nata dalla passione per la lavorazione
+            artigianale del legno. Progettiamo e realizziamo strutture e complementi su misura
+            con legnami di elevata qualità, trattati per resistere nel tempo in esterno e pensati
+            per valorizzare ogni contesto.
           </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- MODAL ZOOM GALLERIA -->
-    <div class="gallery-modal" id="gallery-modal">
-      <img id="gallery-modal-img" alt="Taglio EscoBarber ingrandito">
-    </div>
-
-    <!-- PRODOTTI -->
-    <section id="prodotti">
-      <div class="container">
-        <div class="section-header">
-          <div>
-            <h2 class="section-title">I nostri prodotti</h2>
-            <p class="section-tagline"></p>
+          <p>
+            Ogni progetto viene studiato nei dettagli per combinare estetica, funzionalità e
+            durata: sopralluogo, progettazione, scelta dei materiali, montaggio e finiture
+            vengono seguiti direttamente dal nostro team.
+          </p>
+          <div class="panel-highlight">
+            Specializzati in pensiline e tettoie, pedane e pavimentazioni su misura, travi e
+            perline, staccionate, piscine, gazebo e pergolati in legno lamellare.
           </div>
         </div>
-
-        <div class="about-grid reveal" aria-label="Linea prodotti EscoBarber">
-          <article class="about-card">
-            <h3>Linea EscoBarber</h3>
-            <p>
-              Prodotti bio, lavorati in modo artigianale e pensati con la linea EscoBarber:
-              quello che usiamo su di te in negozio lo porti anche a casa. Una selezione di prodotti studiata per lavorare bene in poltrona e funzionare anche
-              quando ti sistemi da solo davanti allo specchio: formulazioni bio, texture pulite,
-              profumi che non stancano.
-            </p>
-            <p class="mt-sm">
-              Cera, lacca, schiuma da barba e spray volume: tutto quello che usiamo ogni giorno
-              in negozio, scelto e testato da EscoBarber.
-            </p>
-
-            <div class="about-points mt-md">
-              <span>Formule bio e lavorazione artigianale.</span>
-              <span>Prodotti pensati per fade, volume e definizione.</span>
-              <span>La stessa linea che vedi esposta in negozio.</span>
-            </div>
-          </article>
-
-          <figure class="about-photo products-panel-trigger" id="products-panel-trigger">
-            <img src="img/immtuttiprodotti.jpg" alt="Linea prodotti bio e artigianali EscoBarber">
-            <figcaption class="about-photo-tag">Vedi altro</figcaption>
-          </figure>
+        <div>
+          <img src="img/immlogo.jpg" alt="Laboratorio e lavorazioni in legno TECH WOOD">
         </div>
       </div>
-    </section>
+    </div>
+  </div>
 
-    <!-- MODAL PRODOTTI -->
-    <div class="product-modal" id="products-modal">
-      <div class="product-modal-inner">
-        <button class="product-modal-close" type="button" aria-label="Chiudi">×</button>
-        <h3 class="product-modal-title">Prodotti EscoBarber</h3>
-        <p class="product-modal-sub">
-          Tutta la linea bio e artigianale che trovi in negozio, divisa per categorie.
+  <!-- =========================
+       OVERLAY: I NOSTRI LAVORI
+       ========================= -->
+  <div id="overlay-i-nostri-lavori" class="overlay">
+    <div class="panel panel-works">
+      <div class="panel-header">
+        <h2 class="panel-title">I Nostri Lavori</h2>
+        <button class="close-btn" onclick="closeOverlay('i-nostri-lavori')" aria-label="Chiudi">x</button>
+      </div>
+      <div class="panel-content">
+        <p>
+          Scopri le realizzazioni TECH WOOD organizzate per tipologia: soluzioni su misura per pergole, carport,
+          aree gioco, rivestimenti piscina, rimesse e studi.
+        </p>
+        <p class="works-hint">Clicca sul titolo o sull'anteprima per aprire tutte le foto della categoria.</p>
+
+        <div class="works-sections-grid">
+          <div class="works-section">
+            <h3 class="works-section-title work-trigger" data-work-key="pergole">Pergole</h3>
+            <div class="works-grid">
+              <div class="works-card work-trigger" data-work-key="pergole">
+                <img src="img/pergole/pergole1.jpg" alt="Pergola in legno Tech Wood">
+                <span class="works-card-cta">Clicca qui</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="works-section">
+            <h3 class="works-section-title work-trigger" data-work-key="carporter">Carporter</h3>
+            <div class="works-grid">
+              <div class="works-card work-trigger" data-work-key="carporter">
+                <img src="img/carporter/carporter1.jpg" alt="Carporter in legno Tech Wood">
+                <span class="works-card-cta">Clicca qui</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="works-section">
+            <h3 class="works-section-title work-trigger" data-work-key="area-bimbi">Area bimbi</h3>
+            <div class="works-grid">
+              <div class="works-card work-trigger" data-work-key="area-bimbi">
+                <img src="img/area-bimbi/area-bimbi1.jpg" alt="Area bimbi in legno Tech Wood">
+                <span class="works-card-cta">Clicca qui</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="works-section">
+            <h3 class="works-section-title work-trigger" data-work-key="rivestimenti-piscine">Rivestimenti piscine</h3>
+            <div class="works-grid">
+              <div class="works-card work-trigger" data-work-key="rivestimenti-piscine">
+                <img src="img/piscine/piscine1.jpg" alt="Rivestimento piscina in legno Tech Wood">
+                <span class="works-card-cta">Clicca qui</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="works-section">
+            <h3 class="works-section-title work-trigger" data-work-key="rimesse">Rimesse</h3>
+            <div class="works-grid">
+              <div class="works-card work-trigger" data-work-key="rimesse">
+                <img src="img/rimesse/rimesse1.jpg" alt="Rimessa in legno Tech Wood">
+                <span class="works-card-cta">Clicca qui</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="works-section">
+            <h3 class="works-section-title work-trigger" data-work-key="studi">Studi</h3>
+            <div class="works-grid">
+              <div class="works-card work-trigger" data-work-key="studi">
+                <img src="img/strutture/immlavori6.jpg" alt="Studio in legno Tech Wood">
+                <span class="works-card-cta">Clicca qui</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================
+       OVERLAY: DETTAGLIO LAVORI
+       ========================= -->
+  <div id="overlay-work-detail" class="overlay">
+    <div class="panel panel-works">
+      <div class="panel-header">
+        <h2 class="panel-title" id="work-detail-title">Lavori</h2>
+        <button class="close-btn" onclick="closeOverlay('work-detail')" aria-label="Chiudi">x</button>
+      </div>
+      <div class="panel-content">
+        <p>Guarda tutte le foto della categoria selezionata.</p>
+        <div id="work-detail-grid" class="works-grid"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================
+       OVERLAY: VIEWER IMMAGINI
+       ========================= -->
+  <div id="overlay-image-viewer" class="overlay">
+    <div class="panel image-viewer-panel">
+      <div class="image-viewer-frame">
+        <button class="image-viewer-close" onclick="closeOverlay('image-viewer')" aria-label="Chiudi immagine">x</button>
+        <img id="image-viewer-img" class="image-viewer-img" src="" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================
+       OVERLAY: CONTATTI
+       ========================= -->
+  <div id="overlay-contatti" class="overlay">
+    <div class="panel">
+      <div class="panel-header">
+        <h2 class="panel-title">Contatti</h2>
+        <button class="close-btn" onclick="closeOverlay('contatti')" aria-label="Chiudi">x</button>
+      </div>
+      <div class="panel-content">
+        <p>Per informazioni, sopralluoghi o preventivi puoi contattarci:</p>
+
+        <ul class="contact-list">
+          <li>
+            <span class="contact-label">Telefono:</span>
+            <a href="tel:+393662898013" class="link-inline">+39 366 289 8013</a>
+          </li>
+          <li>
+            <span class="contact-label">Email:</span>
+            <a href="mailto:ANDREA.BARELLINI@HOTMAIL.COM" class="link-inline">
+              ANDREA.BARELLINI@HOTMAIL.COM
+            </a>
+          </li>
+
+
+        </ul>
+
+        <a class="contact-cta" href="https://wa.me/393662898013" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M17.48 14.36c-.27-.14-1.6-.79-1.85-.87-.25-.09-.43-.14-.62.14-.18.27-.71.87-.87 1.05-.16.18-.32.2-.6.07-.27-.14-1.14-.42-2.18-1.33-.8-.71-1.34-1.58-1.5-1.85-.16-.27-.02-.41.12-.54.13-.13.27-.32.4-.47.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.47-.07-.14-.62-1.5-.85-2.05-.22-.53-.44-.46-.62-.47l-.53-.01c-.18 0-.47.07-.72.34-.25.27-.95.93-.95 2.27 0 1.34.98 2.64 1.12 2.82.14.18 1.93 2.95 4.67 4.02.65.28 1.15.45 1.54.57.65.21 1.23.18 1.69.11.52-.08 1.6-.65 1.82-1.27.22-.62.22-1.15.15-1.27-.07-.11-.25-.18-.52-.32Z"/>
+            <path d="M12 2a10 10 0 0 0-8.74 14.9L2 22l5.22-1.22A10 10 0 1 0 12 2Zm0 18a7.93 7.93 0 0 1-4.05-1.1l-.29-.17-3.07.71.65-2.99-.19-.31a7.93 7.93 0 1 1 6.95 3.86Z"/>
+          </svg>
+          Chatta su WhatsApp
+        </a>
+
+        <div class="panel-highlight">
+          Nella richiesta indica dove si trova il tuo spazio esterno e che tipo di struttura hai in
+          mente: ti ricontatteremo con una proposta su misura.
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- =========================
+       OVERLAY: QUALITA
+       ========================= -->
+
+  <div id="overlay-qualita" class="overlay">
+    <div class="panel">
+      <div class="panel-header">
+        <h2 class="panel-title">Qualità e lavorazioni</h2>
+        <button class="close-btn" onclick="closeOverlay('qualita')" aria-label="Chiudi">x</button>
+      </div>
+      <div class="panel-content">
+        <p>
+          Selezioniamo legni certificati e li proteggiamo con impregnanti, oli e vernici specifiche per l'esterno.
+          Progettiamo, prefabbrichiamo e montiamo seguendo le norme su carichi e ancoraggi, così le strutture restano stabili,
+          sicure e belle nel tempo anche a contatto con acqua e sole.
         </p>
 
-        <div class="product-list-view" id="products-list-view">
-          <div class="product-cat-grid">
-            <article class="product-cat-card" data-cat="cere">
-              <div class="product-cat-image">
-                <img src="img/immcere1.jpg" alt="Linea cere EscoBarber">
-              </div>
-              <div class="product-cat-label">Cere</div>
-            </article>
+        <ul class="quality-list">
+          <li><strong>Pedane da esterno e pavimentazioni su misura:</strong> pedane, passerelle e scalinate per giardini, terrazzi, tettoie e piscine, anche rialzate con basi robuste.</li>
+          <li><strong>Travi e perline:</strong> tavole e travi di misure standard o su richiesta, in legno massiccio e lamellare.</li>
+          <li><strong>Staccionate in legno per esterno:</strong> grigliati, recinzioni e complementi per delimitare e arredare gli spazi.</li>
+          <li><strong>Piscine:</strong> pavimentazioni bordo piscina in legno, dalla progettazione all’installazione.</li>
+          <li><strong>Gazebo in legno:</strong> strutture agili e robuste per creare sale indipendenti, aree relax e coperture arredative.</li>
+          <li><strong>Pergolati in legno lamellare:</strong> pergole rustiche o moderne con legno trattato secondo le normative ambientali per carico e stabilità.</li>
+        </ul>
 
-            <article class="product-cat-card" data-cat="lacca">
-              <div class="product-cat-image">
-                <img src="img/immlacca.jpg" alt="Linea lacca EscoBarber">
-              </div>
-              <div class="product-cat-label">Lacca</div>
-            </article>
+        <div class="quality-grid">
+          <div class="quality-card">
+            <div class="quality-media">
+              <img class="quality-photo" src="img/qualita/pedana.jpg" alt="Pedana e pavimentazione in legno Tech Wood">
+            </div>
+            <div class="quality-chip">Pedane</div>
+            <h4>Passerelle e pavimenti</h4>
+            <p>Pedane e camminamenti stabili con legni trattati e basi robuste per giardini, terrazzi e bordo piscina.</p>
+          </div>
 
-            <article class="product-cat-card" data-cat="schiuma">
-              <div class="product-cat-image">
-                <img src="img/immbalm.jpg" alt="Linea schiuma da barba EscoBarber">
-              </div>
-              <div class="product-cat-label">Schiuma da barba</div>
-            </article>
+          <div class="quality-card">
+            <div class="quality-media">
+              <img class="quality-photo" src="img/qualita/pergole.jpg" alt="Pergolato in legno lamellare Tech Wood">
+            </div>
+            <div class="quality-chip">Pergolati</div>
+            <h4>Legno lamellare</h4>
+            <p>Pergole rustiche o moderne in lamellare trattato, conformi alle normative per carico e stabilità.</p>
+          </div>
 
-            <article class="product-cat-card" data-cat="spray">
-              <div class="product-cat-image">
-                <img src="img/immmouse.jpg" alt="Linea spray volume EscoBarber">
-              </div>
-              <div class="product-cat-label">Mousse volume </div>
-            </article>
+          <div class="quality-card">
+            <div class="quality-media">
+              <img class="quality-photo" src="img/qualita/piscine.jpg" alt="Bordo piscina in legno Tech Wood">
+            </div>
+            <div class="quality-chip">Piscine</div>
+            <h4>Bordo e solarium</h4>
+            <p>Rivestimenti e decking in legno per piscine, progettati e installati su misura per resistere all’acqua.</p>
           </div>
         </div>
 
-        <div class="product-detail-view" id="products-detail-view">
-          <button class="product-back-btn" type="button" id="products-back-btn">‹ Torna ai prodotti</button>
-          <h4 class="product-detail-title" id="product-detail-title">Cere</h4>
-          <div class="product-detail-grid" id="product-detail-grid"></div>
+        <div class="panel-highlight">
+          Trattiamo il legno per garantirne durata, stabilità e un’integrazione armoniosa con l’ambiente circostante.
         </div>
       </div>
     </div>
-
-    <!-- MODAL ZOOM PRODOTTI -->
-    <div id="product-zoom-modal">
-      <img id="product-zoom-img" alt="Prodotto EscoBarber ingrandito">
-    </div>
-
-    <!-- MAPPA -->
-    <section id="dove-siamo">
-      <div class="container">
-        <div class="section-header">
-          <div>
-            <h2 class="section-title">Dove siamo</h2>
-            <p class="section-tagline">
-              Dal barrio al centro di Poggibonsi. Parcheggi comodi, zero complicazioni.
-            </p>
-          </div>
-        </div>
-
-        <div class="map-card reveal">
-          <iframe
-            class="map"
-            title="Mappa – EscoBarber"
-            src="https://maps.google.com/maps?q=Via%20Montegrappa%2059%20Poggibonsi%20Siena&t=&z=15&ie=UTF8&iwloc=&output=embed"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-          <div class="map-caption">
-            Via Montegrappa 59, Poggibonsi (SI) – Apri la mappa per il percorso più veloce.
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ORARI + CONTATTI -->
-    <section id="contatti">
-      <div class="container">
-        <div class="section-header">
-          <div>
-            <h2 class="section-title">Orari</h2>
-            <p class="section-tagline"></p>
-          </div>
-        </div>
-
-        <div class="hours-card reveal">
-          <p class="hours-lines">
-            Lunedì chiuso<br>
-            Da Martedì a Sabato:<br>
-            9:00–12:30<br>
-            14:30–18:00<br>
-            Domenica chiuso
-          </p>
-        </div>
-
-        <div class="contact-actions reveal" aria-label="Canali di contatto EscoBarber">
-          <a class="contact-icon contact-icon-wa"
-            href="https://wa.me/393751110430?text=Ciao%20EscoBarber%2C%20vorrei%20info%20su%20taglio%20e%20barba."
-            target="_blank" rel="noopener">
-            <span class="sr-only">WhatsApp</span>
-            <svg viewBox="0 0 32 32" fill="none" xmlns="http://w3.org/2000/svg" aria-hidden="true">
-              <path fill="currentColor" d="M19.11 17.33c-.27-.14-1.58-.78-1.83-.87-.25-.09-.43-.14-.62.14-.18.27-.71.87-.87 1.05-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.58-1.5-1.85-.16-.27 0-.41.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.62-1.49-.86-2.04-.23-.55-.46-.48-.62-.48h-.53c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29 0 1.34.98 2.64 1.12 2.82.14.18 1.93 2.95 4.68 4.14.65.28 1.15.45 1.54.57.65.21 1.25.18 1.72.11.52-.08 1.58-.64 1.8-1.25.23-.62.23-1.15.16-1.25-.07-.09-.25-.16-.52-.3z"/>
-              <path stroke="currentColor" d="M26 15c0 6.08-4.93 11-11 11-1.88 0-3.65-.47-5.19-1.29L5 26l1.29-4.81A10.94 10.94 0 0 1 4 15C4 8.92 8.92 4 15 4s11 4.92 11 11z"/>
-            </svg>
-          </a>
-
-          <a class="contact-icon contact-icon-mail" href="mailto:info@escobarber.it">
-            <span class="sr-only">Email</span>
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <rect x="3" y="5" width="18" height="14" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="1.6"/>
-              <polyline points="4,6 12,12 20,6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </a>
-
-          <a class="contact-icon contact-icon-ig" href="https://instagram.com/" target="_blank" rel="noopener">
-            <span class="sr-only">Instagram</span>
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <rect x="3" y="3" width="18" height="18" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="1.6"/>
-              <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/>
-              <circle cx="17" cy="7" r="1.4" fill="currentColor"/>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- STICKY WHATSAPP -->
-  <a class="wa-sticky" href="https://wa.me/393751110430?text=Ciao%20EscoBarber%2C%20vorrei%20parlare%20con%20te.">
-    <svg viewBox="0 0 32 32" fill="none" xmlns="http://w3.org/2000/svg" aria-hidden="true">
-      <path fill="#fff" d="M19.11 17.33c-.27-.14-1.58-.78-1.83-.87-.25-.09-.43-.14-.62.14-.18.27-.71.87-.87 1.05-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.58-1.5-1.85-.16-.27 0-.41.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.62-1.49-.86-2.04-.23-.55-.46-.48-.62-.48h-.53c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29 0 1.34.98 2.64 1.12 2.82.14.18 1.93 2.95 4.68 4.14.65.28 1.15.45 1.54.57.65.21 1.25.18 1.72.11.52-.08 1.58-.64 1.8-1.25.23-.62.23-1.15.16-1.25-.07-.09-.25-.16-.52-.3z"/>
-      <path stroke="#fff" d="M26 15c0 6.08-4.93 11-11 11-1.88 0-3.65-.47-5.19-1.29L5 26l1.29-4.81A10.94 10.94 0 0 1 4 15C4 8.92 8.92 4 15 4s11 4.92 11 11z"/>
-    </svg>
-    <span>Parla con EscoBarber</span>
-  </a>
-
-
-<footer>
-  <div class="container footer-inner">
-    <small>&copy; <span id="year"></span> EscoBarber - Dal Barrio. Tutti i diritti riservati.</small>
-    <small>Partita IVA 01600300527</small>
-    <small><a href="privacy-policy.html">Privacy Policy</a></small>
-    <small><a href="terms.html">Termini e Condizioni</a></small>
   </div>
-</footer>
-
-  <!-- JSON-LD LocalBusiness -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Barbershop",
-  "name": "EscoBarber",
-  "image": "https://escobarber.it/img/immnegozio1.jpg",
-  "logo": "https://escobarber.it/img/logo.jpg",
-
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Via Montegrappa 59",
-    "addressLocality": "Poggibonsi",
-    "addressRegion": "SI",
-    "postalCode": "53036",
-    "addressCountry": "IT"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "43.469",
-    "longitude": "11.149"
-  },
-  "url": "https://escobarber.it/",
-  "telephone": "+39 375 111 0430",
-  "priceRange": "€€",
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"],
-      "opens": "09:00",
-      "closes": "20:00"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Saturday",
-      "opens": "09:00",
-      "closes": "18:00"
-    }
-  ],
-  "sameAs": [
-    "https://instagram.com/"
-  ]
-}
-</script>
 
 
+  <!-- =========================
+       SCRIPT: OVERLAY + SLIDESHOW + PRELOADER
+       ========================= -->
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    // Apri/chiudi popup
+    function openOverlay(name) {
+      const overlay = document.getElementById("overlay-" + name);
+      if (overlay) overlay.classList.add("active");
+    }
+    function closeOverlay(name) {
+      const overlay = document.getElementById("overlay-" + name);
+      if (overlay) overlay.classList.remove("active");
+    }
 
-    // Reveal on scroll
-    (function(){
-      const els = document.querySelectorAll(".reveal");
-      if(!("IntersectionObserver" in window)) {
-        els.forEach(el => el.classList.add("visible"));
-        return;
+    // Galleria lavori per sottomenù
+    const workGallery = {
+      pergole: [
+        { src: "img/pergole/pergole1.jpg", alt: "Pergola in legno Tech Wood" },
+        { src: "img/pergole/pergole2.jpg", alt: "Pergola Tech Wood - dettaglio" },
+        { src: "img/pergole/pergole3.jpg", alt: "Pergola in legno Tech Wood" },
+        { src: "img/pergole/pergole4.jpg", alt: "Pergola Tech Wood - dettaglio" },
+        { src: "img/pergole/pergole5.jpg", alt: "Pergola in legno Tech Wood" }
+      ],
+      carporter: [
+        { src: "img/carporter/carporter1.jpg", alt: "Carporter in legno Tech Wood" },
+        { src: "img/carporter/carporter2.jpg", alt: "Carporter Tech Wood - copertura" },
+        { src: "img/carporter/carporter3.jpg", alt: "Carporter in legno Tech Wood" },
+        { src: "img/carporter/carporter4.jpg", alt: "Carporter Tech Wood - copertura" },
+        { src: "img/carporter/carporter5.jpg", alt: "Carporter in legno Tech Wood" },
+        { src: "img/carporter/carporter6.jpg", alt: "Carporter in legno Tech Wood" },
+        { src: "img/carporter/carporter7.jpg", alt: "Carporter in legno Tech Wood" },
+        { src: "img/carporter/carporter8.jpg", alt: "Carporter in legno Tech Wood" },
+        { src: "img/carporter/carporter9.jpg", alt: "Carporter in legno Tech Wood" },
+        { src: "img/carporter/carporter10.jpg", alt: "Carporter Tech Wood - copertura" },
+        { src: "img/carporter/carporter11.jpg", alt: "Carporter in legno Tech Wood" },
+      ],
+
+
+      "area-bimbi": [
+        { src: "img/area-bimbi/area-bimbi1.jpg", alt: "Area bimbi in legno Tech Wood" },
+        { src: "img/area-bimbi/area-bimbi2.jpg", alt: "Area bimbi in legno Tech Wood" }
+
+      ],
+      "rivestimenti-piscine": [
+        { src: "img/piscine/piscine1.jpg", alt: "Rivestimento piscina in legno Tech Wood" },
+        { src: "img/piscine/piscine2.jpg", alt: "Rivestimento piscina in legno Tech Wood" },
+        { src: "img/piscine/piscine3.jpg", alt: "Rivestimento piscina in legno Tech Wood" },
+        { src: "img/piscine/piscine4.jpg", alt: "Rivestimento piscina in legno Tech Wood" },
+        { src: "img/piscine/piscine5.jpg", alt: "Rivestimento piscina in legno Tech Wood" },
+
+      ],
+      rimesse: [
+       { src: "img/rimesse/rimesse1.jpg", alt: "Rimessa in legno Tech Wood" },
+       { src: "img/rimesse/rimesse2.jpg", alt: "Rimessa in legno Tech Wood" },
+       { src: "img/rimesse/rimesse3.jpg", alt: "Rimessa in legno Tech Wood" },
+       { src: "img/rimesse/rimesse4.jpg", alt: "Rimessa in legno Tech Wood" },
+       { src: "img/rimesse/rimesse5.jpg", alt: "Rimessa in legno Tech Wood" },
+       { src: "img/rimesse/rimesse6.jpg", alt: "Rimessa in legno Tech Wood" },
+       { src: "img/rimesse/rimesse7.jpg", alt: "Rimessa in legno Tech Wood" },
+       { src: "img/rimesse/rimesse8.jpg", alt: "Rimessa in legno Tech Wood" },
+       { src: "img/rimesse/rimesse9.jpg", alt: "Rimessa in legno Tech Wood" },
+       { src: "img/rimesse/rimesse10.jpg", alt: "Rimessa in legno Tech Wood" },
+       { src: "img/rimesse/rimesse11.jpg", alt: "Rimessa in legno Tech Wood" },
+       { src: "img/rimesse/rimesse12.jpg", alt: "Rimessa in legno Tech Wood" },
+       { src: "img/rimesse/rimesse13.jpg", alt: "Rimessa in legno Tech Wood" },
+       { src: "img/rimesse/rimesse14.jpg", alt: "Rimessa in legno Tech Wood" },
+      ],
+      studi: [
+        { src: "img/studi/studi1.jpg", alt: "Studio in legno Tech Wood" },
+        { src: "img/studi/studi2.jpg", alt: "Studio in legno Tech Wood" },
+
+      ]
+    };
+
+    const workLabels = {
+      pergole: "Pergole",
+      carporter: "Carporter",
+      "area-bimbi": "Area bimbi",
+      "rivestimenti-piscine": "Rivestimenti piscine",
+      rimesse: "Rimesse",
+      studi: "Studi"
+    };
+
+    function openWorkDetail(key) {
+      const gallery = workGallery[key];
+      const overlay = document.getElementById("overlay-work-detail");
+      const titleEl = document.getElementById("work-detail-title");
+      const grid = document.getElementById("work-detail-grid");
+
+      if (!gallery || !overlay || !titleEl || !grid) return;
+
+      titleEl.textContent = workLabels[key] || "Lavori";
+      grid.innerHTML = "";
+
+      gallery.forEach(function (item) {
+        const card = document.createElement("div");
+        card.className = "works-card";
+        const img = document.createElement("img");
+        img.src = item.src;
+        img.alt = item.alt || titleEl.textContent;
+        card.appendChild(img);
+        grid.appendChild(card);
+      });
+
+      overlay.classList.add("active");
+    }
+
+    // Viewer immagini fullscreen per i lavori
+    function openImageViewer(src, altText) {
+      const overlay = document.getElementById("overlay-image-viewer");
+      const img = document.getElementById("image-viewer-img");
+      if (!overlay || !img) return;
+      img.src = src;
+      img.alt = altText || "Immagine";
+      overlay.classList.add("active");
+    }
+
+    // Gestisce la chiusura del viewer senza chiudere altri overlay
+    document.addEventListener("click", function (event) {
+      const viewer = document.getElementById("overlay-image-viewer");
+      if (viewer && viewer.classList.contains("active")) {
+        const panel = viewer.querySelector(".panel");
+        if (panel && !panel.contains(event.target)) {
+          viewer.classList.remove("active");
+        }
+        event.stopPropagation();
+        event.stopImmediatePropagation();
       }
-      const io = new IntersectionObserver((entries,obs)=>{
-        entries.forEach(entry=>{
-          if(entry.isIntersecting){
-            entry.target.classList.add("visible");
-            obs.unobserve(entry.target);
+    }, true);
+
+    // Chiudi cliccando fuori dal pannello
+    document.addEventListener("click", function (event) {
+      const clickedPanel = event.target.closest(".panel");
+      if (clickedPanel) return;
+
+      const openOverlays = document.querySelectorAll(".overlay.active");
+      openOverlays.forEach(function (overlay) {
+        if (!event.target.closest(".menu-card") &&
+            !event.target.closest(".hero-bar")) {
+          overlay.classList.remove("active");
+        }
+      });
+    });
+
+    // Clic su titoli e foto dei lavori per aprire il sottomenù
+    document.addEventListener("DOMContentLoaded", function () {
+      const workTriggers = document.querySelectorAll("[data-work-key]");
+      workTriggers.forEach(function (trigger) {
+        trigger.addEventListener("click", function (event) {
+          event.preventDefault();
+          event.stopPropagation();
+          const key = trigger.getAttribute("data-work-key");
+          openWorkDetail(key);
+        });
+      });
+
+      // Clic sulle immagini del dettaglio per vederle intere
+      const workDetail = document.getElementById("overlay-work-detail");
+      if (workDetail) {
+        workDetail.addEventListener("click", function (event) {
+          const img = event.target.closest(".works-card img");
+          if (img) {
+            event.preventDefault();
+            event.stopPropagation();
+            openImageViewer(img.src, img.alt);
           }
         });
-      },{threshold:0.14});
-      els.forEach(el=>io.observe(el));
-    })();
+      }
+    });
 
-    // HERO SLIDER: SOLO FOTO CHE SCORRONO
+    // Chiudi con ESC
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        document.querySelectorAll(".overlay.active").forEach(o => o.classList.remove("active"));
+      }
+    });
+
+    // =========================
+    // SLIDESHOW HERO ADATTIVO (desktop/mobile)
+    // =========================
     (function(){
       const slides = Array.from(document.querySelectorAll(".hero-slide"));
       if (!slides.length) return;
 
       const mq = window.matchMedia("(max-width: 768px)");
       let current = -1;
+      let timer = null;
 
       function isVisibleSlide(slide){
         return mq.matches
@@ -1676,292 +1757,98 @@
         showSlide(current);
       }
 
-      // espongo la funzione così possiamo richiamarla dopo la classificazione delle immagini
+      function startSlider(){
+        if (timer) clearInterval(timer);
+        setFirstVisible();
+        mq.addEventListener("change", setFirstVisible);
+
+        timer = setInterval(function(){
+          const next = nextVisible(current);
+          if(next === null) return;
+          current = next;
+          showSlide(current);
+        }, 6000);
+      }
+
       window.ebSetFirstVisibleHero = setFirstVisible;
-
-      setFirstVisible();
-      mq.addEventListener("change", setFirstVisible);
-
-      setInterval(function(){
-        const next = nextVisible(current);
-        if(next === null) return;
-        current = next;
-        showSlide(current);
-      }, 6000);
+      window.startHeroSlideshow = startSlider;
     })();
 
-      // GALLERY SLIDER + MODAL
-      (function(){
-        const rows   = Array.from(document.querySelectorAll(".gallery-row"));
-        if (!rows.length) return;
+    // Classifica automaticamente le slide in base all'orientamento (mobile/desktop)
+    window.addEventListener("load", () => {
+      const imgs = document.querySelectorAll(".hero-slide img");
 
-        let current = 0;
-        const status = document.getElementById("gallery-status");
-        const track  = document.querySelector(".gallery-track");
+      imgs.forEach(img => {
+        const slide = img.closest(".hero-slide");
+        if (!slide) return;
 
-        // solo mobile: stessa breakpoint del CSS (@media max-width: 42rem)
-        function isMobileGallery(){
-          return window.matchMedia &&
-                window.matchMedia("(max-width: 42rem)").matches;
-        }
+        const w = img.naturalWidth;
+        const h = img.naturalHeight;
 
-        function showRow(i){
-          rows.forEach((row,idx)=>row.classList.toggle("is-active", idx === i));
-          if (status) status.textContent = (i+1) + " / " + rows.length;
+        slide.classList.remove("auto-mobile", "auto-desktop");
 
-          // FIX: quando cambio pagina, su mobile riporto lo scroll orizzontale all'inizio
-          if (track && isMobileGallery()){
-            track.scrollLeft = 0;
-          }
-        }
-        showRow(0);
-
-        const prev = document.getElementById("gallery-prev");
-        const next = document.getElementById("gallery-next");
-
-        if (prev && next){
-          prev.addEventListener("click", function(){
-            current = (current - 1 + rows.length) % rows.length;
-            showRow(current);
-          });
-          next.addEventListener("click", function(){
-            current = (current + 1) % rows.length;
-            showRow(current);
-          });
-        }
-
-        const modal = document.getElementById("gallery-modal");
-        const modalImg = document.getElementById("gallery-modal-img");
-
-        if (modal && modalImg){
-          document.querySelectorAll(".shot img").forEach(img=>{
-            img.addEventListener("click", function(){
-              modalImg.src = this.src;
-              modal.classList.add("is-visible");
-            });
-          });
-          modal.addEventListener("click", function(){
-            modal.classList.remove("is-visible");
-          });
-        }
-      })();
-
-
-    // MODAL PRODOTTI: CARTELLE + DETTAGLIO + ZOOM
-    (function(){
-      const trigger = document.getElementById("products-panel-trigger");
-      const modal = document.getElementById("products-modal");
-      if(!trigger || !modal) return;
-
-      const listView   = document.getElementById("products-list-view");
-      const detailView = document.getElementById("products-detail-view");
-      const backBtn    = document.getElementById("products-back-btn");
-      const detailTitle= document.getElementById("product-detail-title");
-      const detailGrid = document.getElementById("product-detail-grid");
-
-      const catConfig = {
-        cere: {
-          label: "Cere",
-          images: [
-            { src: "img/prodotto2.jpg", alt: "Cera capelli 1" },
-            { src: "img/prodotto3.jpg", alt: "Cera capelli 2" },
-          ]
-        },
-        lacca: {
-          label: "Lacca",
-          images: []
-        },
-        schiuma: {
-          label: "Schiuma da barba",
-          images: []
-        },
-        spray: {
-          label: "Spray volume",
-          images: []
-        }
-      };
-
-      const hasSubmenu = (catKey) => {
-        const cfg = catConfig[catKey];
-        return !!(cfg && Array.isArray(cfg.images) && cfg.images.length);
-      };
-
-      function openModal(){
-        modal.classList.add("is-visible");
-        listView.style.display   = "block";
-        detailView.style.display = "none";
-      }
-
-      function closeModal(){
-        modal.classList.remove("is-visible");
-      }
-
-      function openCategory(catKey){
-        const cfg = catConfig[catKey];
-        if(!cfg) return;
-
-        detailTitle.textContent = cfg.label;
-        detailGrid.innerHTML = cfg.images.map(img => (
-          '<figure><img src="'+img.src+'" alt="'+img.alt+'"></figure>'
-        )).join("");
-
-        listView.style.display   = "none";
-        detailView.style.display = "block";
-      }
-
-      trigger.addEventListener("click", openModal);
-
-      modal.addEventListener("click", function(e){
-        if(e.target === modal || e.target.classList.contains("product-modal-close")){
-          closeModal();
-        }
-      });
-
-      modal.querySelectorAll(".product-cat-card").forEach(card=>{
-        card.addEventListener("click", function(e){
-          e.stopPropagation();
-          const cat = this.dataset.cat;
-
-          if (hasSubmenu(cat)){
-            openCategory(cat);
-          } else if (typeof showZoom === "function"){
-            const img = this.querySelector(".product-cat-image img");
-            if (img) showZoom(img.src, img.alt);
-          }
-        });
-      });
-
-      backBtn.addEventListener("click", function(e){
-        e.stopPropagation();
-        listView.style.display   = "block";
-        detailView.style.display = "none";
-      });
-
-      const zoomModal = document.getElementById("product-zoom-modal");
-      const zoomImg   = document.getElementById("product-zoom-img");
-      let showZoom = null;
-
-      if(zoomModal && zoomImg){
-        showZoom = function(src, alt){
-          zoomImg.src = src;
-          zoomImg.alt = alt || "Prodotto EscoBarber";
-          zoomModal.classList.add("is-visible");
-        };
-
-        detailGrid.addEventListener("click", function(e){
-          const img = e.target.closest("img");
-          if(!img) return;
-          e.stopPropagation();
-          showZoom(img.src, img.alt);
-        });
-
-        zoomModal.addEventListener("click", function(){
-          zoomModal.classList.remove("is-visible");
-        });
-      }
-    })();
-
-    // PRELOADER
-    document.addEventListener("DOMContentLoaded", function () {
-      const preloader = document.getElementById("eb-preloader");
-      if (!preloader) return;
-
-      window.addEventListener("load", function () {
-        setTimeout(function () {
-          preloader.classList.add("hidden");
-        }, 2500);
-      });
-    });
-  </script>
-
-  <!-- WhatsApp: appare solo dopo aver scrollato oltre la home -->
-  <script>
-    (function(){
-      const wa = document.querySelector(".wa-sticky");
-      if (!wa) return;
-
-      function toggleWa(){
-        // quando superi ~una schermata (home), compare
-        const trigger = window.innerHeight * 0.9; 
-        if (window.scrollY > trigger){
-          wa.classList.add("is-visible");
+        if (h > w) {
+          slide.classList.add("auto-mobile");
         } else {
-          wa.classList.remove("is-visible");
+          slide.classList.add("auto-desktop");
         }
-      }
+      });
 
-      // controlla subito allo start
-      toggleWa();
-      window.addEventListener("scroll", toggleWa);
-      window.addEventListener("resize", toggleWa);
-    })();
-  </script>
-
-  <script>
-  // Classificazione autom. delle immagini HERO in mobile / desktop
-  window.addEventListener("load", () => {
-    const imgs = document.querySelectorAll(".hero-slide img");
-
-    imgs.forEach(img => {
-      const slide = img.closest(".hero-slide");
-      if (!slide) return;
-
-      const w = img.naturalWidth;
-      const h = img.naturalHeight;
-
-      // pulisco eventuali classi vecchie
-      slide.classList.remove("auto-mobile", "auto-desktop");
-
-      if (h > w) {
-        // immagine più alta che larga = verticale = mobile
-        slide.classList.add("auto-mobile");
-      } else {
-        // immagine più larga che alta = orizzontale = desktop
-        slide.classList.add("auto-desktop");
+      if (typeof window.ebSetFirstVisibleHero === "function") {
+        window.ebSetFirstVisibleHero();
       }
     });
 
-    // dopo aver classificato tutte le slide,
-    // dico allo slider di scegliere la prima giusta per lo schermo
-    if (typeof window.ebSetFirstVisibleHero === "function") {
-      window.ebSetFirstVisibleHero();
-    }
-  });
+    // =========================
+    // PRELOADER TECH WOOD + TOPBAR LOGO/PROGRESS
+    // =========================
+    document.addEventListener("DOMContentLoaded", function () {
+      const preloader = document.getElementById("tw-preloader");
+      const hero = document.querySelector(".hero");
+      let slidesStarted = false;
+      const preloadStart = performance.now();
+      const MIN_PRELOAD = 1800; // mostra il preload almeno 1.8s per intero
 
-  (function(){
-  const sticky = document.querySelector(".wa-sticky");
-  const footer = document.querySelector("footer");
+      const startSlidesSafely = () => {
+        if (slidesStarted) return;
+        slidesStarted = true;
+        if (window.startHeroSlideshow) window.startHeroSlideshow();
+      };
 
-  if (!sticky || !footer) return;
+      const showPage = () => {
+        if (preloader) {
+          preloader.classList.add("fly-out");
+          setTimeout(() => preloader.classList.add("hidden"), 900);
+        }
+        document.body.classList.remove("loading");
+        document.body.classList.add("preload-complete");
+        if (hero) {
+          hero.style.willChange = "opacity";
+          hero.style.transition = "opacity 0.9s ease";
+          hero.style.opacity = "1";
+        }
+        // Avvia lo slideshow subito dopo l'uscita del preload per mantenere il ritmo
+        if (preloader) {
+          setTimeout(startSlidesSafely, 900);
+        } else {
+          startSlidesSafely();
+        }
+      };
 
-  function checkPosition(){
-    const footerTop = footer.getBoundingClientRect().top;
-    const viewportHeight = window.innerHeight;
+      const fadeTimer = setTimeout(() => {
+        if (preloader) preloader.classList.add("fade-out-logo");
+      }, 1200);
 
-    // se il footer entra in vista → nascondi
-    if (footerTop < viewportHeight + 40) {
-      sticky.classList.add("hide-at-bottom");
-    } else {
-      sticky.classList.remove("hide-at-bottom");
-    }
-  }
+      const fallbackTimer = setTimeout(showPage, 4000);
 
-  window.addEventListener("scroll", checkPosition);
-  window.addEventListener("resize", checkPosition);
-
-  checkPosition();
-})();
-
-  </script>
-
-  <script>
-    const toggle = document.querySelector(".nav-toggle");
-    const menu = document.getElementById("mobile-menu");
-    if (toggle && menu){
-      toggle.addEventListener("click", () => {
-        menu.classList.toggle("is-open");
+      window.addEventListener("load", () => {
+        clearTimeout(fadeTimer);
+        clearTimeout(fallbackTimer);
+        const elapsed = performance.now() - preloadStart;
+        const delay = Math.max(0, MIN_PRELOAD - elapsed);
+        setTimeout(showPage, delay);
       });
-    }
+    });
   </script>
 
 </body>
