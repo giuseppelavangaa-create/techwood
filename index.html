@@ -1157,6 +1157,29 @@
         height: 20px;
       }
     }
+    /* FIX TAP MOBILE (senza togliere trasparenza) */
+    .tw-bottombar {
+      z-index: 9999;
+      pointer-events: auto;
+    }
+
+    .tw-bottombar a,
+    .tw-bottombar button {
+      pointer-events: auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Evita che elementi flottanti o overlay “fantasma” intercettino i tap */
+    .social-fab {
+      z-index: 9998;
+    }
+    /* Durante il PRELOAD: niente barra sotto e niente social */
+    body.loading .tw-bottombar,
+    body.loading .social-fab {
+      display: none !important;
+    }
+
   </style>
 </head>
 <body class="loading">
