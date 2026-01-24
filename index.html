@@ -68,11 +68,12 @@
       }
 
     body.loading section.hero {
-      opacity: 0;              /* Nasconde la home */
-      pointer-events: none;    /* Disattiva i click */
-      filter: blur(8px);
-      transition: opacity 0.9s ease, filter 1s ease;
-      }
+      opacity: 0;
+      pointer-events: none;
+      filter: none;
+      transition: opacity 0.9s ease;
+    }
+
 
     .auto-mobile,
     .auto-desktop { display: block; }
@@ -110,7 +111,6 @@
       background: rgba(12, 18, 16, 0.65);
       border-radius: 12px;
       border: 1px solid rgba(255, 255, 255, 0.08);
-      backdrop-filter: blur(4px);
     }
     body::-webkit-scrollbar-thumb,
     .panel::-webkit-scrollbar-thumb,
@@ -135,10 +135,10 @@
     .tw-topbar-inner,
     .tw-bottombar-inner,
     .hero-inner,
-    .panel,
     .social-fab {
       scale: var(--site-scale);
     }
+
 
     .tw-topbar-inner,
     .tw-bottombar-inner {
@@ -186,7 +186,6 @@
       flex-direction: column;
       gap: 18px;
       transition: opacity 0.85s ease, transform 0.85s ease, visibility 0.85s ease;
-      animation: tw-bg-flow 10s ease-in-out infinite alternate;
       transform: translateY(0);
       will-change: opacity, transform;
     }
@@ -232,9 +231,8 @@
         drop-shadow(0 12px 26px rgba(0, 0, 0, 0.85))
         drop-shadow(0 0 16px rgba(196, 255, 213, 0.55));
       opacity: 0;
-      animation:
-        tw-logo-glow 1.9s ease-out forwards,
-        tw-logo-breathe 3.6s ease-in-out 2s infinite;
+      animation: tw-logo-glow 1.9s ease-out forwards;
+
     }
 
     .tw-preloader-overlay.fly-out {
@@ -255,7 +253,7 @@
       text-transform: uppercase;
       text-indent: 0.28em;
       font-weight: 600;
-      color: #00a859;
+      color: #ffffff;
       opacity: 0;
       transform: translateY(4px);
       animation: tw-text-fade 1.4s ease-out 0.5s forwards;
@@ -289,7 +287,7 @@
       opacity: 0;
       transition: transform 0.7s ease, opacity 0.7s ease;
       z-index: 900;
-      backdrop-filter: blur(6px);
+      backdrop-filter: none;
     }
 
     body.preload-complete .tw-topbar {
@@ -424,7 +422,7 @@
       justify-content: center;
       padding: 0 24px;
       z-index: 850;
-      backdrop-filter: blur(6px);
+      backdrop-filter: none;
     }
 
     .tw-bottombar-inner {
@@ -468,7 +466,7 @@
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      background-attachment: fixed;
+      background-attachment: scroll;
 
       opacity: 1;
       transition: opacity 0.8s ease-in-out;
@@ -683,8 +681,8 @@
       display: none;
       justify-content: center;
       align-items: center;
-      background: var(--overlay-bg);
-      backdrop-filter: blur(8px);
+      background: rgba(0, 0, 0, 0.884);
+      backdrop-filter: none;
       z-index: 1000;
       padding: 20px;
     }
@@ -705,13 +703,17 @@
       box-shadow: 0 18px 60px rgba(0, 0, 0, 0.45);
       position: relative;
       animation: fadeInUp 0.35s ease;
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
+      backdrop-filter: none;
+      -webkit-backdrop-filter: none;
       border: 1px solid rgba(255, 255, 255, 0.18);
     }
 
     .panel.panel-works {
       max-width: calc(1200px / var(--site-scale));
+
+      /* FIX LAG: evita blur su blur (overlay già blurra lo sfondo) */
+      backdrop-filter: none;
+      -webkit-backdrop-filter: none;
     }
 
     .panel-header {
@@ -1362,7 +1364,6 @@
           Scopri le realizzazioni TECH WOOD organizzate per tipologia: soluzioni su misura per pergole, carport,
           aree gioco, rivestimenti piscina, rimesse e studi.
         </p>
-        <p class="works-hint">Clicca sul titolo o sull'anteprima per aprire tutte le foto della categoria.</p>
 
         <div class="works-sections-grid">
           <div class="works-section">
@@ -1660,18 +1661,29 @@
       titleEl.textContent = workLabels[key] || "Lavori";
       grid.innerHTML = "";
 
+      // FIX: riduce reflow/paint appendendo in batch
+      const frag = document.createDocumentFragment();
+
       gallery.forEach(function (item) {
         const card = document.createElement("div");
         card.className = "works-card";
+
         const img = document.createElement("img");
-        img.src = item.src;
         img.alt = item.alt || titleEl.textContent;
+
+        // FIX: carico più leggero e non blocca la UI
+        img.loading = "lazy";
+        img.decoding = "async";
+        img.src = item.src;
+
         card.appendChild(img);
-        grid.appendChild(card);
+        frag.appendChild(card);
       });
 
+      grid.appendChild(frag);
       overlay.classList.add("active");
     }
+
 
     // Viewer immagini fullscreen per i lavori
     function openImageViewer(src, altText) {
